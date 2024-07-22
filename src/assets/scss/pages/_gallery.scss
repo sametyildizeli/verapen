@@ -1,0 +1,77 @@
+.gallery-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // height: "-webkit-fit-content";
+  // width: "-webkit-fit-content";
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.gallery-modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.gallery-modal-content img {
+  max-width: calc(75vw); //100%;
+  max-height: calc(75vh); //100%;
+}
+
+.gallery-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery-modal-close:hover,
+.gallery-modal-close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery-modal-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.gallery-modal-next-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallery-modal-prev-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.gallery-modal-next-icon:hover,
+.gallery-modal-prev-icon:hover,
+.gallery-modal-next-icon:focus,
+.gallery-modal-prev-icon:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.machine-track-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // height: "-webkit-fit-content";
+  // width: "-webkit-fit-content";
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.machine-track-modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.machine-track-modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.machine-track-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.machine-track-modal-close:hover,
+.machine-track-modal-close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.machine-track-modal-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.machine-track-modal-next-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.machine-track-modal-prev-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.machine-track-modal-next-icon:hover,
+.machine-track-modal-prev-icon:hover,
+.machine-track-modal-next-icon:focus,
+.machine-track-modal-prev-icon:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
