@@ -135,11 +135,12 @@
 }
 
 .bg-gradient-header {
-  background-image: url('/bg-header.svg') !important;
+  // background-image: url('/_images/sliders/slider1.png') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   min-height: 680px !important;
 }
+
 
 @media (max-width: 991px) {
   .bg-gradient-header{

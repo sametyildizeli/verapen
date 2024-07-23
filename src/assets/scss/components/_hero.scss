@@ -1,19 +1,61 @@
 .fade-in {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .fade-out {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
 }
 
 .hero-section-container-height {
-  min-height: calc(680px - 10rem);
+  min-height: calc(680px - 5rem);
 }
 
 .hero-section {
-  padding: 150px 0 !important;
+  padding: 200px 0 !important;
+}
+
+.hero-section {
+  position: relative;
+  padding-bottom: 0;
+  overflow: hidden; /* Ensures content doesn't spill out */
+  background: transparent;
+}
+
+.hero-background,
+.hero-background-next {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none; /* Prevents interaction with the background */
+}
+
+.hero-background-next {
+  opacity: 0;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
 }
 
 @media (min-width: 765px) and (max-width: 991px) {

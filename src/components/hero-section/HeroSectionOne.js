@@ -1,127 +1,94 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { IoLogoYoutube, IoPlayCircleOutline } from "react-icons/io5";
-import Image from "next/image";
 import ModalVideo from "react-modal-video";
-import {
-  FaAngleLeft,
-  FaAngleRight,
-  FaArrowLeft,
-  FaArrowRight,
-  FaChevronLeft,
-  FaChevronRight,
-  FaCircle,
-} from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
 
 const sliderProductData = [
   {
     key: 0,
     id: "0",
-    title: `ÇİFT DİNGİL \n GERİYE DEVİRMELİ RÖMORK`,
+    title: `Verapen'e Hoşgeldiniz`,
+    description: `İç Oda Kapısı, Cam Balkon Sistemleri, PVC Doğrama ve Aluminyum Sistemleri`,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/slider-product-2.png",
   },
   {
     key: 1,
     id: "1",
-    title: `TANDEM DİNGİL \n GERİYE DEVİRMELİ RÖMORK`,
+    title: `Bakış Door \n Lake Kapak ve İç Oda Kapı Laquer Touch `,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/slider-product-3.png",
   },
   {
     key: 2,
     id: "2",
-    title: `TEK DİNGİL \n GERİYE DEVİRMELİ RÖMORK`,
+    title: `Albert Genau \nCam Balkon, Teras ve \nBahçe  Kapama \nSistemleri`,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/slider-product-4.png",
   },
   {
     key: 3,
     id: "3",
-    title: `SANTRAFÜJ POMPALI GALVANİZ \n SU TANKERİ`,
+    title: `Egepen \nPVC Pencere ve Kapı Sistemleri`,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/slider-product-5.png",
-  },
-  // {
-  //   key: 4,
-  //   id: "4",
-  //   title: `SIVI GÜBRE TAŞIMA VE DAĞITMA TANKERİ`,
-  //   videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
-  //   productImg: "/slider-product-6.png",
-  // },
-  {
-    key: 4,
-    id: "4",
-    title: `TEK DiNGiL iKi LASTiK\nHAVUZ KASA DAMPERLi RÖMORK`,
-    videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
-    productImg: "/slider-product-7.png",
-  },
-  {
-    key: 5,
-    id: "5",
-    title: `TANDEM DiNGiL DÖRT LASTiK \n DAMPERLİ HAVUZ KASA RÖMORK`,
-    videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
-    productImg: "/slider-product-8.png",
-  },
-  {
-    key: 6,
-    id: "6",
-    title: `ÜÇ DiNGiL ALTI LASTiK \n TRİDEM DAMPERLi RÖMORK`,
-    videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
-    productImg: "/slider-product-9.png",
-  },
-  {
-    key: 7,
-    id: "7",
-    title: `BORU TAŞIMA RÖMORKU`,
-    videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
-    productImg: "/slider-product-10.png",
   },
 ];
 
 const HeroSectionOne = () => {
   const [isOpen, setOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0); // State to track active index
-  const [selectedProduct, setSelectedProduct] = useState(0); // State to track selected product
-  const [changeSlide, setChangeSlide] = useState(false); // State to track change slide
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [selectedProduct, setSelectedProduct] = useState(0);
+  const [fadeIn, setFadeIn] = useState(false); // State to track fade-in
 
   const setSliderItem = (id) => {
-    setChangeSlide(true);
     setActiveIndex(id);
     setSelectedProduct(id);
-    setChangeSlide(false);
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setSelectedProduct((prevIndex) =>
-        prevIndex === sliderProductData.length - 1 ? 0 : prevIndex + 1
-      );
-      setActiveIndex((prevIndex) =>
-        prevIndex === sliderProductData.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [activeIndex]);
+    // const interval = setInterval(() => {
+    //   setFadeIn(false); // Start fade out
+    //   setTimeout(() => {
+    //     setSelectedProduct((prevIndex) =>
+    //       prevIndex === sliderProductData.length - 1 ? 0 : prevIndex + 1
+    //     );
+    //     setActiveIndex((prevIndex) =>
+    //       prevIndex === sliderProductData.length - 1 ? 0 : prevIndex + 1
+    //     );
+    //     setFadeIn(true); // Start fade in
+    //   }, 500); // Match this duration with the CSS transition duration
+    // }, 5000);
+    // return () => clearInterval(interval);
+  }, []);
 
   return (
-    <section
-      className="hero-section text-white bg-gradient-header"
-      style={{
-        // background: "url('/hero-dot-bg.png')no-repeat center right",
-        paddingBottom: "0px",
-      }}
-    >
+    <section className="hero-section text-white bg-gradient-header" style={{padding:'5rem !important'}}>
+      <div
+        className="hero-background"
+        style={{
+          backgroundImage: `url('/_images/sliders/slider-${activeIndex}.webp')`,
+          opacity: fadeIn ? 1 : 0,
+        }}
+      />
+      <div
+        className="hero-background-next"
+        style={{
+          backgroundImage: `url('/_images/sliders/slider-${
+            (activeIndex + 1) % sliderProductData.length
+          }.png')`,
+          opacity: fadeIn ? 0 : 1,
+        }}
+      />
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}
-        videoId="MPkfO8vMlIs"
+        videoId={sliderProductData[selectedProduct].videoLink.split("=")[1]}
         onClose={() => setOpen(false)}
       />
       <div
         className="container hero-section-container-height"
-        style={{ position: "relative" }}
+        style={{ position: "relative", marginTop: "5rem" }}
       >
         {sliderProductData.map((item, index) => (
           <div
@@ -130,10 +97,8 @@ const HeroSectionOne = () => {
               activeIndex === index ? "fade show active" : "fade"
             }`}
             style={{
-              // transition: "all 0.5s ease",
-              transition: "opacity 0.5s ease",
+              transition: "opacity 0.1s ease",
               position: "absolute",
-              // padding: "0 2rem",
               zIndex: activeIndex === index ? "1" : "0",
             }}
           >
@@ -153,7 +118,7 @@ const HeroSectionOne = () => {
                 <div className="action-btns align-items-center flex d-sm-flex d-lg-flex d-md-flex">
                   <Link href={`/product/${item.key}`}>
                     <a
-                      className="btn btn-primary me-3  d-flex justify-content-between align-items-center"
+                      className="btn btn-primary me-3 d-flex justify-content-between align-items-center"
                       style={{ backgroundColor: "#3C3C3B" }}
                     >
                       <h6 style={{ color: "white", margin: "0 0.5rem 0 0 " }}>
@@ -169,7 +134,7 @@ const HeroSectionOne = () => {
 
                   <div className="">
                     <a
-                      onClick={() => setOpen(false)}
+                      onClick={() => setOpen(true)}
                       type="button"
                       className="text-white text-decoration-none d-flex align-items-center watch-now-btn"
                     >
@@ -187,10 +152,8 @@ const HeroSectionOne = () => {
             <div className="col-lg-7 col-md-12 mt-5">
               <div className="hero-img position-relative circle-shape-images">
                 <img
-                  // style={{ height: "460px" }}
                   src={item.productImg}
                   alt="hero img"
-                  // height={460}
                   className="img-fluid position-relative z-5"
                 />
               </div>
@@ -202,6 +165,7 @@ const HeroSectionOne = () => {
           className="circle-navigation d-flex justify-content-center pb-2"
           style={{
             position: "absolute",
+            marginBottom:'-5rem',
             top: "100%",
             left: "50%",
             transform: "translate(-50%, -50%)",
@@ -212,7 +176,9 @@ const HeroSectionOne = () => {
             <FaCircle
               color="gray"
               style={
-                activeIndex === item.key ? { opacity: "1" } : { opacity: "0.5" }
+                activeIndex === item.key
+                  ? { opacity: "1" }
+                  : { opacity: "0.5" }
               }
               key={index}
               onClick={() => setSliderItem(item.key)}

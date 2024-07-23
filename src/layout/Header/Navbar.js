@@ -38,8 +38,8 @@ const Navbar = ({ navDark, insurance, classOption }) => {
         }`}
         style={
           scroll > headerTop
-            ? { paddingTop: "1.5rem", paddingBottom: "1.5rem" }
-            : { paddingTop: "3.5rem", paddingBottom: "3.5rem" }
+            ? { paddingTop: "1.5rem", paddingBottom: "2rem" }
+            : { paddingTop: "5rem", paddingBottom: "2rem" }
         }
       >
         <div className="container d-flex align-items-center justify-content-lg-between position-relative">

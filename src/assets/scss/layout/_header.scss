@@ -116,7 +116,7 @@
 }
 .navbar-light.sticky-header.affix,
 .navbar-dark.sticky-header.affix {
-  background: $dark;
+  background: transparent; //$dark;
 }
 .navbar-light.sticky-header.affix .btn,
 .navbar-dark.sticky-header.affix .btn,
