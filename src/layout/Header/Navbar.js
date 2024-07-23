@@ -34,12 +34,12 @@ const Navbar = ({ navDark, insurance, classOption }) => {
     >
       <nav
         className={`navbar navbar-expand-xl z-50 ${"navbar-dark"} sticky-header ${
-          scroll > headerTop ? "affix" : "affix"
+          scroll > headerTop ? "affix" : ""
         }`}
         style={
           scroll > headerTop
             ? { paddingTop: "1.5rem", paddingBottom: "2rem" }
-            : { paddingTop: "5rem", paddingBottom: "2rem" }
+            : { paddingTop: "5rem", paddingBottom: "3rem" }
         }
       >
         <div className="container d-flex align-items-center justify-content-lg-between position-relative">
@@ -279,7 +279,7 @@ const Navbar = ({ navDark, insurance, classOption }) => {
                   <img
                     width={150}
                     // height={36}
-                    src="/logo-web.png"
+                    src="/_images/verapen-logo.png"
                     alt="logo"
                     className="img-fluid ps-2"
                   />

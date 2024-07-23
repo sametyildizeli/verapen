@@ -13,11 +13,14 @@ export default function Home() {
     <Layout>
       <Navbar navDark />
       <HeroSectionOne />
+      {/* <HeroSectionOneC /> */}
+      {/* <CustomSlider /> */}
+      {/* <CustomSlider2C /> */}
       <PortfolioTab />
       <TestimonialOne />
       <LatestBlog />
       <QuickSupport />
-      <Footer footerLight />
+      <Footer footerDark />
     </Layout>
   );
 }

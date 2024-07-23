@@ -34,17 +34,17 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                   <div className="footer-single-col mb-4">
                     {footerLight ? (
                       <Image
-                        width={201}
-                        height={30}
-                        src="/logo-web.png"
+                        width={270}
+                        height={69.64}
+                        src="/_images/verapen-logo.png"
                         alt="logo"
                         className="img-fluid logo-white"
                       />
                     ) : (
                       <Image
-                        width={201}
-                        height={30}
-                        src="/logo-web.png"
+                        width={270}
+                        height={69.64}
+                        src="/_images/verapen-logo.png"
                         alt="logo"
                         className="img-fluid logo-color"
                       />
@@ -139,14 +139,14 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                 <div className="footer-single-col text-start text-lg-end text-md-end">
                   <ul className="list-unstyled list-inline footer-social-list mb-0">
                     <li className="list-inline-item">
-                      <Link href="https://www.instagram.com/daglarmakine">
+                      <Link href="https://www.instagram.com/">
                         <a>
                           <FaInstagram />
                         </a>
                       </Link>
                     </li>
                     <li className="list-inline-item">
-                      <Link href="https://www.facebook.com/daglarmakine">
+                      <Link href="https://www.facebook.com/">
                         <a>
                           <FaFacebook />
                         </a>
