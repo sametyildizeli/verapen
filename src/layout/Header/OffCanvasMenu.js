@@ -74,7 +74,7 @@ const OffCanvasMenu = () => {
           <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
             <div className="dropdown-grid rounded-custom width-full">
                 <span>
-                  <Link href={"/gallery"}>
+                  <Link href={"/campaigns"}>
                     <a
                       className="dropdown-link px-0"
                       data-bs-dismiss="offcanvas"

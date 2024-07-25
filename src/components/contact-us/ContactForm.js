@@ -10,20 +10,20 @@ const ContactForm = () => {
     e.preventDefault();
     console.log("e : ", e);
 
-    emailjs
-      .sendForm("service_85wwghq", "template_aqrzoap", form.current, {
-        publicKey: "Cnin9VP4s9pm0y-an",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          setSubmitted(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm("service_85wwghq", "template_aqrzoap", form.current, {
+    //     publicKey: "Cnin9VP4s9pm0y-an",
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //       setSubmitted(true);
+    //       form.current.reset();
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
   };
 
   return (
@@ -37,12 +37,23 @@ const ContactForm = () => {
     >
       <div className="container">
         <div className="row justify-content-lg-between align-items-center">
+          <div className="col-lg-5 col-md-10">
+            <div className="contact-us-img">
+              <Image
+                width={612}
+                height={406}
+                src="/_images/contact-us.png"
+                alt="contact us"
+                className="img-fluid"
+              />
+            </div>
+          </div>
           <div className="col-lg-6 col-md-8">
             <div className="section-heading">
               <h2>İletişim Formu</h2>
               <p>
                 Sizlere en iyi hizmeti sunabilmemiz için lütfen aşağıdaki formu
-                doldurunuz. 
+                doldurunuz.
               </p>
             </div>
             {submitted && (
@@ -174,17 +185,6 @@ const ContactForm = () => {
                 </button>
               </form>
             )}
-          </div>
-          <div className="col-lg-5 col-md-10">
-            <div className="contact-us-img">
-              <Image
-                width={612}
-                height={406}
-                src="/contact-us.png"
-                alt="contact us"
-                className="img-fluid"
-              />
-            </div>
           </div>
         </div>
       </div>

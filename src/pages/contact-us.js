@@ -17,7 +17,7 @@ const ContactUs = () => {
       />
       <ContactCard />
       <ContactForm />
-      <Footer footerLight />
+      <Footer footerDark />
     </Layout>
   );
 };

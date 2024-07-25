@@ -9,20 +9,20 @@ const ServiceForm = () => {
     e.preventDefault();
     console.log("e : ", e);
 
-    emailjs
-      .sendForm("service_85wwghq", "template_aqrzoap", form.current, {
-        publicKey: "Cnin9VP4s9pm0y-an",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          setSubmitted(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm("service_85wwghq", "template_aqrzoap", form.current, {
+    //     publicKey: "Cnin9VP4s9pm0y-an",
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //       setSubmitted(true);
+    //       form.current.reset();
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
   };
 
   return (

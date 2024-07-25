@@ -41,7 +41,7 @@ $gray-100:              #f8fafc !default;
 $gray-200:              #f2f2f2 !default; // Brightened gray
 $gray-300:              white !default; // Brightened gray
 $gray-400:              #c0c0c5 !default;
-$gray-500:              #CBA98E !default; // Adjusted to match logo color 1 (brighter)
+$gray-500:              #00779C !default; // Adjusted to match logo color 1 (brighter)
 $gray-600:              #757575 !default; // Brightened gray
 $gray-700:              #4D4D4C !default; // Adjusted to match logo color 2 (brighter)
 $gray-800:              #333 !default; // Brightened gray
@@ -49,7 +49,7 @@ $gray-900:              #212121 !default; // Brightened gray
 $black:                 #000 !default; // Brightened gray
 
 // Brand colors adjusted to match logo colors (brightened)
-$primary:               #CBA98E !default; // Adjusted to match logo color 1 (brighter)
+$primary:               #00779C !default; // Adjusted to match logo color 1 (brighter)
 $accent:                #4D4D4C !default; // Adjusted to match logo color 2 (brighter)
 $secondary:             $gray-400 !default;
 $info:                  #50b5ff !default;
@@ -57,7 +57,7 @@ $success:               #5cc9a7 !default;
 $warning:               #ffb116 !default;
 $danger:                #f25767 !default;
 $light:                 $white !default;
-$dark:                  #013E51 !default; //$gray-800 !default;
+$dark:                  #00779C !default; //$gray-800 !default;
 
 
 // Adding new color to default Bootstrap's $theme-colors map

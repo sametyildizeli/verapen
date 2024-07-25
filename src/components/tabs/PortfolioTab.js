@@ -18,7 +18,7 @@ const PortfolioTab = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-12 col-md-6">
             <div className="tab-button mb-5">
               <ul
                 className="nav nav-pills d-flex justify-content-center"
@@ -36,7 +36,7 @@ const PortfolioTab = () => {
                     aria-controls="damperli-romork"
                     aria-selected="true"
                   >
-                    Damperli Römork
+                    Bakış İç Oda Kapısı
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -50,7 +50,7 @@ const PortfolioTab = () => {
                     aria-controls="tandem-dingil"
                     aria-selected="false"
                   >
-                    Kargo Römork
+                    Albert Genau Balkon Sistemleri
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -64,7 +64,7 @@ const PortfolioTab = () => {
                     aria-controls="pills-design"
                     aria-selected="false"
                   >
-                    Tanker
+                    Egepen PVC Sistemleri
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -78,7 +78,74 @@ const PortfolioTab = () => {
                     aria-controls="boru-romork"
                     aria-selected="false"
                   >
-                    Boru Römork
+                    Aluminyum Sistemleri
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="col-lg-12 col-md-6">
+            <div className="tab-button mb-5">
+              <ul
+                className="nav nav-pills d-flex justify-content-center"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li className="nav-item" role="presentation">
+                  <button
+                    className="nav-link active"
+                    id="damperli-romork-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#damperli-romork"
+                    type="button"
+                    role="tab"
+                    aria-controls="damperli-romork"
+                    aria-selected="true"
+                  >
+                    Tümü
+                  </button>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <button
+                    className="nav-link"
+                    id="tandem-dingil-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tandem-dingil"
+                    type="button"
+                    role="tab"
+                    aria-controls="tandem-dingil"
+                    aria-selected="false"
+                  >
+                    SubCategory 1
+                  </button>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <button
+                    className="nav-link"
+                    id="pills-design-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-design"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-design"
+                    aria-selected="false"
+                  >
+                    SubCategory 2
+                  </button>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <button
+                    className="nav-link"
+                    id="boru-romork-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#boru-romork"
+                    type="button"
+                    role="tab"
+                    aria-controls="boru-romork"
+                    aria-selected="false"
+                  >
+                    SubCategory 3
                   </button>
                 </li>
               </ul>
@@ -98,17 +165,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/damperli-romork/cd-p-1.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${0}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Çift Dingil</h5>
+                          <h5 style={{ color: "white" }}>Product 1</h5>
                           <address>
-                            Döner Geriye <br /> Devirmeli Römork
+                            Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>
@@ -120,17 +187,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/damperli-romork/cd-p-2.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${1}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Tandem Dingil</h5>
+                          <h5 style={{ color: "white" }}>Product 2</h5>
                           <address>
-                            Geriye Devirmeli <br /> Römork
+                            Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>
@@ -142,17 +209,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/damperli-romork/cd-p-3.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${2}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Tek Dingil</h5>
+                          <h5 style={{ color: "white" }}>Product 3</h5>
                           <address>
-                            Geriye Devirmeli <br /> Römork
+                            Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>
@@ -174,18 +241,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/cargo-romork/cr-p-1.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${4}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Tek Dingil</h5>
+                          <h5 style={{ color: "white" }}>Product 1</h5>
                           <address>
-                            Tek Dingil İki Lastik <br /> Havuz Kasa Damperli
-                            Römork
+                            Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>
@@ -197,18 +263,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/cargo-romork/cr-p-2.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${5}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Tandem Dingil</h5>
-                          <address>
-                            Tandem Dingil Dört Lastik <br /> Damperli Havuz Kasa
-                            Römork
+                        <h5 style={{ color: "white" }}>Product 2</h5>
+                        <address>
+                          Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>
@@ -220,17 +285,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/cargo-romork/cr-p-3.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${6}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Üç Dingil</h5>
-                          <address>
-                            Üç Dingil Altı Lastik <br /> Tridem Damperli Römork
+                        <h5 style={{ color: "white" }}>Product 3</h5>
+                        <address>
+                          Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>
@@ -252,19 +317,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/tanker/t-p-1.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${3}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Su Tankeri</h5>
-                          <address>
-                            Santrafüj Pompalı
-                            <br />
-                            Galvaniz Su Tankeri
+                        <h5 style={{ color: "white" }}>Product 1</h5>
+                        <address>
+                          Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>
@@ -276,11 +339,11 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/tanker/t-p-2.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${4}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
@@ -314,18 +377,17 @@ const PortfolioTab = () => {
                     className="rounded-custom border d-block office-address overflow-hidden z-2"
                     style={{
                       background:
-                        "url('/products/boru-romork/br-1.jpg')no-repeat center center",
+                        "url('/_images/product/product-sample.png')no-repeat center center",
                       cursor: "pointer",
                     }}
                   >
-                    <Link href={`/product/${7}`}>
+                    <Link href={`/_images/products/product-sample.png`}>
                       <div className="office-content text-center p-4">
                         <span className="office-overlay"></span>
                         <div className="office-info">
-                          <h5 style={{ color: "white" }}>Boru Römork</h5>
+                          <h5 style={{ color: "white" }}>Product 1</h5>
                           <address>
-                            Boru Römorkü
-                            <br />
+                          Description Line 1 <br /> Description Line 2
                           </address>
                         </div>
                       </div>

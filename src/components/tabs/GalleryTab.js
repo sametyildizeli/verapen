@@ -6,6 +6,7 @@ import { FiArrowRight } from 'react-icons/fi';
 import SectionTitle from '../common/SectionTitle';
 import MediaGallery from '@components/media-gallery/media-gallery';
 import MediaGalleryVideo from '@components/media-gallery-video/media-gallery-video';
+import CampaignGallery from '@components/custom/CampaignGallery';
 
 const GalleryTab = () => {
   return (
@@ -14,9 +15,9 @@ const GalleryTab = () => {
         <div className="row justify-content-center align-content-center">
           <div className="col-md-10 col-lg-6">
             <SectionTitle
-              subtitle="Medya"
-              title="Galeri"
-              description="Dolore consequat sint voluptate ipsum et et voluptate laborum do ea adipisicing et."
+              // subtitle=""
+              title="Kampanya ve Duyurular"
+              // description="Dolore consequat sint voluptate ipsum et et voluptate laborum do ea adipisicing et."
               centerAlign
             />
           </div>
@@ -38,7 +39,7 @@ const GalleryTab = () => {
                     role="tab"
                     aria-selected="false"
                   >
-                    Fotoğraf
+                    Kampanyalar
                   </a>
                 </Link>
               </li>
@@ -52,7 +53,7 @@ const GalleryTab = () => {
                     role="tab"
                     aria-selected="false"
                   >
-                    Video
+                    Duyurular
                   </a>
                 </Link>
               </li>
@@ -63,7 +64,7 @@ const GalleryTab = () => {
                 id="tab-1"
                 role="tabpanel"
               >
-                <MediaGallery />
+                <CampaignGallery />
               </div>
               <div className="tab-pane fade pt-60" id="tab-2" role="tabpanel">
                 <MediaGalleryVideo />

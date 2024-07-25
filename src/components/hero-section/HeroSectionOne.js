@@ -38,45 +38,50 @@ const sliderProductData = [
 const HeroSectionOne = () => {
   const [isOpen, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [activeBg, setActiveBg] = useState(0);
   const [selectedProduct, setSelectedProduct] = useState(0);
-  const [fadeIn, setFadeIn] = useState(false); // State to track fade-in
+  const [loading, setLoading] = useState(false);
 
   const setSliderItem = (id) => {
-    console.log("id", id);
-    setActiveIndex(id);
-    setTimeout(() => {
-      setSelectedProduct(id);
-    }, 500);
+    setLoading(true);
+    const img = new Image();
+    img.src = `/_images/sliders/slider-${id}.png`;
+    img.onload = () => {
+      setActiveBg(id);
+      setLoading(false);
+      setTimeout(() => {
+        setActiveIndex(id);
+        setSelectedProduct(id);
+      }, 50);
+    };
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSelectedProduct((prevIndex) =>
-        prevIndex === sliderProductData.length - 1 ? 0 : prevIndex + 1
-      );
-      setActiveIndex((prevIndex) =>
-        prevIndex === sliderProductData.length - 1 ? 0 : prevIndex + 1
-      );
+      const nextIndex = (activeIndex + 1) % sliderProductData.length;
+      setSliderItem(nextIndex);
     }, 5000);
+
     return () => clearInterval(interval);
   }, [activeIndex]);
 
   return (
     <section
       className="hero-section text-white bg-gradient-header"
-      style={{ padding: "5rem !important" }}
+      style={{ padding: "10rem !important" }}
     >
       <div
         className="hero-background"
         style={{
-          backgroundImage: `url('/_images/sliders/slider-${activeIndex}.png')`,
+          transition: "background-image 0.1s ease-in-out",
+          backgroundImage: `url('/_images/sliders/slider-${activeBg}.png')`,
         }}
       />
       <div
         className="hero-background-next"
         style={{
           backgroundImage: `url('/_images/sliders/slider-${
-            (activeIndex + 1) % sliderProductData.length
+            (activeBg + 1) % sliderProductData.length
           }.png')`,
         }}
       />

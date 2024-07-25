@@ -188,29 +188,21 @@ const registerTestimonialTarget = [
 ///footer data
 const footerPrimaryPages = [
   {
-    title: "Tandem Damperli Römork \n Çift Dingil",
+    title: "Bakış İç Oda Kapısı",
     href: "/products",
   },
   {
-    title: "Çift Dingil \n Geriye Devirmeli Römork",
+    title: "Alber Genau Cam Balkon",
     href: "/products",
   },
   {
-    title: "Tandem Dingil \n Geriye Devirmeli Römork",
+    title: "Egepen PVC Sistemleri",
     href: "/products",
   },
   {
-    title: "Tek Dingil \n Geriye Devirmeli Römork",
+    title: "Aliminyum Sistemleri",
     href: "/products",
-  },
-  {
-    title: "Santrafuj Pompalı Galvaniz \n Su tankeri",
-    href: "/products",
-  },
-  {
-    title: "Sivi Gübre Taşıma ve Dağıtma Tankeri",
-    href: "/products",
-  },
+  }
 ];
 
 const footerPages = [
@@ -219,20 +211,16 @@ const footerPages = [
     href: "/",
   },
   {
-    title: "Hakkımızda",
+    title: "Kurumsal",
     href: "/about-us",
   },
   {
-    title: "Makine Parkuru",
-    href: "/track",
-  },
-  {
-    title: "Haberler",
-    href: "/news",
+    title: "Ürünler",
+    href: "/products",
   },
   {
     title: "Galeri",
-    href: "/gallery",
+    href: "/campaigns",
   },
   {
     title: "İletişim",

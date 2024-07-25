@@ -5,8 +5,6 @@ import TechTab from "@components/tabs/TechTab";
 import Footer from "@layout/Footer/Footer";
 import Navbar from "@layout/Header/Navbar";
 import Layout from "@layout/Layout";
-import Gallery from "./gallery";
-import MediaGallery from "@components/media-gallery/media-gallery";
 import MediaProductGallery from "@components/media-product-gallery/media-product-gallery";
 import CustomDatatable from "@components/datatable/datatable";
 import HeroSectionOne from "@components/hero-section/HeroSectionOne";

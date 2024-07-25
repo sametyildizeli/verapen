@@ -34,26 +34,30 @@ const Navbar = ({ navDark, insurance, classOption }) => {
     >
       <nav
         className={`navbar navbar-expand-xl z-50 ${"navbar-dark"} sticky-header ${
-          scroll > headerTop ? "affix" : ""
+          scroll > headerTop ? "affix" : "affix"
         }`}
         style={
           scroll > headerTop
-            ? { paddingTop: "1.5rem", paddingBottom: "2rem" }
-            : { paddingTop: "5rem", paddingBottom: "3rem" }
+            ? {
+                paddingTop: "2rem",
+                paddingBottom: "2rem",
+                backgroundColor: "white",
+              }
+            : { paddingTop: "5rem", paddingBottom: "2rem" }
         }
       >
         <div className="container d-flex align-items-center justify-content-lg-between position-relative">
           <Link href={"/"}>
             <a className="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none">
-              {/* {scroll > headerTop || !navDark ? ( */}
+              {scroll > headerTop || !navDark ? (
                 <Image
                   width={270}
                   height={69.64}
-                  src="/_images/verapen-logo.png"
                   alt="logo"
+                  src="/_images/verapen-logo-dark.png"
                   className="img-fluid logo-color"
                 />
-              {/* ) : (
+              ) : (
                 <Image
                   width={270}
                   height={69.64}
@@ -61,7 +65,7 @@ const Navbar = ({ navDark, insurance, classOption }) => {
                   alt="logo"
                   className="img-fluid logo-white"
                 />
-              )} */}
+              )}
             </a>
           </Link>
           <button
@@ -80,7 +84,7 @@ const Navbar = ({ navDark, insurance, classOption }) => {
           <div className="clearfix"></div>
           <div className="collapse navbar-collapse justify-content-center">
             <ul className="nav col-12 col-md-auto justify-content-center main-menu">
-              <li style={{margin:'0rem 1rem'}}>
+              <li style={{ margin: "0rem 1rem" }}>
                 <Link href="/">
                   <a className="nav-link">
                     {" "}
@@ -89,7 +93,7 @@ const Navbar = ({ navDark, insurance, classOption }) => {
                 </Link>
               </li>
 
-              <li style={{margin:'0rem 1rem'}}>
+              <li style={{ margin: "0rem 1rem" }}>
                 <Link href={"/about-us"}>
                   <a className="nav-link">
                     <b>Kurumsal</b>
@@ -97,7 +101,7 @@ const Navbar = ({ navDark, insurance, classOption }) => {
                 </Link>
               </li>
 
-              <li className="nav-item dropdown"  style={{margin:'0rem 1rem'}}>
+              <li className="nav-item dropdown" style={{ margin: "0rem 1rem" }}>
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -155,16 +159,16 @@ const Navbar = ({ navDark, insurance, classOption }) => {
                 </div>
               </li>
 
-              <li  style={{margin:'0rem 1rem'}}>
-                <Link href="/gallery">
+              <li style={{ margin: "0rem 1rem" }}>
+                <Link href="/campaigns">
                   <a className="nav-link">
                     {" "}
-                    <b>Galeri</b>
+                    <b>Kampanyalar</b>
                   </a>
                 </Link>
               </li>
 
-              <li  style={{margin:'0rem 1rem'}}>
+              <li style={{ margin: "0rem 1rem" }}>
                 <Link href={"/contact-us"}>
                   <a className="nav-link">
                     <b>İletişim</b>
@@ -254,16 +258,14 @@ const Navbar = ({ navDark, insurance, classOption }) => {
 
             <Link href="/test.pdf">
               <a
-                // className={"btn btn-primary header-catalog-btn"}
                 target="_blank"
                 className={
-                  // scroll > headerTop
-                    // ? "btn btn-primary"
-                    // : 
-                    "btn btn-primary header-catalog-btn"
+                  scroll > headerTop
+                    ? "btn btn-primary header-catalog-btn"
+                    : "btn btn-primary header-catalog-btn"
                 }
               >
-                E-KATALOG
+                <b>E-KATALOG</b>
               </a>
             </Link>
           </div>

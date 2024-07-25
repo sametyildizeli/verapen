@@ -7,7 +7,7 @@ const CustomPageHeader = ({ title, desc, integration, blogtags }) => {
     <section
       className="page-header position-relative overflow-hidden ptb-150 bg-dark"
       style={{
-        background: "url('/contact-banner.png')no-repeat center",
+        background: "url('/_images/banner.png')no-repeat center",
         backgroundSize: "cover",
       }}
     >

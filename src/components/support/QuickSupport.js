@@ -15,7 +15,7 @@ const QuickSupport = () => {
         <div className="row justify-content-between">
           <div className="col-xl-7 col-lg-7 col-md-12">
             <SectionTitle
-              subtitle="Hızlı Destek"
+              subtitle="Destek Hattı"
               title="Bizimle İletişime Geçin!"
               description="Aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz. Size en kısa sürede dönüş yapacağız."
             />
@@ -28,9 +28,7 @@ const QuickSupport = () => {
                 </div>
                 <div className="contact-info">
                   <h5>Adres</h5>
-                  <p>
-                    Ahmet Turangazi OSB Mh. 19. Sk. No:16/1 58000 Merkez/ Sivas
-                  </p>
+                  <p>4 Eylül San. Sitesi Keresteciler 3. Blok No:12 Sivas</p>
                   <Link href="/contact-us">
                     <a className="read-more-link text-decoration-none">
                       <span className="far me-2">
@@ -55,7 +53,7 @@ const QuickSupport = () => {
                       <span className="far me-2">
                         <BiCommentDetail className="mb-1" />
                       </span>{" "}
-                      Email Gönderin
+                      info@verapen.com
                     </a>
                   </Link>
                 </div>
@@ -75,7 +73,7 @@ const QuickSupport = () => {
                       <span className="far me-2">
                         <FaPhoneAlt className="mb-1" />
                       </span>{" "}
-                      Telefonla Arayın
+                      +90 346 223 73 32
                     </a>
                   </Link>
                 </div>
@@ -89,7 +87,7 @@ const QuickSupport = () => {
         className="bg-dark position-absolute bottom-0 h-25 bottom-0 left-0 right-0 z--1 py-5"
         style={{
           minHeight: "360px",
-          background: "url('/contact-banner.png')no-repeat center",
+          background: "url('/_images/banner.png')no-repeat center",
         }}
       >
         {/* <div className="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light left-5"></div> */}

@@ -17,9 +17,11 @@ const OurStory = () => {
               <h4 className="h5 text-primary">Our Story</h4>
               <h2>A Great Story Starts with a Friendly Team</h2>
               <p>
-                Sedir Grup olarak 1999 yılında başladığımız yemek, inşaat, tarım
-                ve hayvancılık sektöründeki yolculuğumuzda daima en iyiyi
-                hedefledik.{" "}
+                Verapen uzun bir geçmiş ve bu sürede kazanılmış tecrübe ve
+                deneyimin verdiği güç ile geleceğe başarılı adımlarla, güven
+                içinde ilerlemektedir. Üçler Elektrik adıyla ticari faaliyetine
+                1987 yılında başlamış ve bu güne kadar büyük projelerde
+                yüklenici konumlarında bulunmuştur.{" "}
               </p>
               <p>
                 Piyasadaki kaliteyi artırmak ve gelen talepleri karşılamak üzere
@@ -27,15 +29,10 @@ const OurStory = () => {
                 yedek parçaları üretimine başladık.{" "}
               </p>
               <p>
-                Çeyrek asırlık tecrübemizden aldığımız güç ile kaliteli işçiliği
-                birleştirerek ürettiğimiz römork, tanker ve yedek parçalarımızı
-                gerekli tüm kontrol ve testlerden başarıyla geçirerek
-                müşterilerimizin memnuniyetine sunuyoruz.{" "}
+              Güçlü ve yenilikçi hedefler kazandırılmış kurumsal yapıya sahip ve bu yapıyı geliştirmek için çalışan inançlı yönetimi ile daha büyük hedeflere ulaşmak için emin adımlarla ilerlemektedir.{" "}
               </p>
               <p>
-                Sektörel, teknolojik, teknik gelişme ve ilerlemeleri yakından
-                takip ederek çiftçilerimize daha kaliteli hizmet ve ürün vermek
-                amacıyla çalışmaya, üretmeye devam edeceğiz.{" "}
+              Firmamızın gücü, temelinde yatan tecrübeden kaynaklanmaktadır.{" "}
               </p>
               <div className="mt-4">
                 <h6 className="mb-3">We Are Awarded By-</h6>

@@ -11,7 +11,7 @@ export default function Gallery() {
   return (
     <Layout>
       <Navbar  navDark/>      
-      <CustomPageHeader title="GALERİ" />
+      <CustomPageHeader title="Kampanyalar ve Duyurular" />
       <GalleryTab />
       {/* <MediaGallery /> */}
       <Footer footerLight />

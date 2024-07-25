@@ -18,9 +18,7 @@ const ContactCard = () => {
               </span>
               <div className="contact-promo-info mb-4">
                 <h5>Ofisimize Uğrayın</h5>
-                <p>
-                  Ahmet Turangazi OSB Mh. 19. Sk. No:16/1 58000 Merkez/ Sivas
-                </p>
+                <p>4 Eylül San. Sitesi Keresteciler 3. Blok No:12 Sivas</p>
               </div>
               <a
                 href="https://maps.app.goo.gl/YJQJ4U89jtRfeXcc8"
@@ -39,15 +37,15 @@ const ContactCard = () => {
               <div className="contact-promo-info mb-4">
                 <h5>Bize Mail Atın</h5>
                 <p>
-
-                  Bizimle email yoluyla iletişime geçin. Size en kısa sürede geri dönüş yapacağız.
+                  Bizimle email yoluyla iletişime geçin. Size en kısa sürede
+                  geri dönüş yapacağız.
                 </p>
               </div>
               <a
-                href="mailto:kaliteyonetim@daglarmakine.com.tr"
+                href="mailto:info@verapen.com"
                 className="btn btn-link mt-auto"
               >
-                kaliteyonetim@daglarmakine.com.tr
+                info@verapen.com
               </a>
             </div>
           </div>
@@ -58,12 +56,10 @@ const ContactCard = () => {
               </span>
               <div className="contact-promo-info mb-4">
                 <h5>Bizi Arayın</h5>
-                <p>
-                  Bizi arayın. Size en kısa sürede yardımcı olacağız.
-                </p>
+                <p>Bizi arayın. Size en kısa sürede yardımcı olacağız.</p>
               </div>
               <a href="tel:+90 346 502 51 5" className="btn btn-link mt-auto">
-                +90 346 502 51 50
+                +90 346 223 73 32
               </a>
             </div>
           </div>

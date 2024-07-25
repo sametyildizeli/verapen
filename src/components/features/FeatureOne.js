@@ -69,7 +69,7 @@ const FeatureOne = () => {
             <div className="col-lg-6 mt-4">
               <div className="position-relative d-flex flex-column h-100 flex-wrap bg-danger-soft p-5 rounded-custom">
                 <div className="cta-left-info mb-2">
-                  <h5>Utilize your software data</h5>
+                  <h5>Ürünlerimize buradan göz atabilirsiniz</h5>
                   <p>
                     Progressively reinvent models and niche revolutionary
                     benefits for integrated niches.{" "}
@@ -97,7 +97,7 @@ const FeatureOne = () => {
             <div className="col-lg-6 mt-4">
               <div className="position-relative d-flex flex-column h-100 flex-wrap bg-primary-soft p-5 rounded-custom">
                 <div className="cta-left-info mb-2">
-                  <h5>Get real time updated anytime</h5>
+                  <h5>Ürünlerimiz hakkında detaylı bilgi almak için bize ulaşabilirsiniz.</h5>
                   <p>
                     Progressively reinvent models and niche revolutionary
                     benefits for integrated niches.{" "}

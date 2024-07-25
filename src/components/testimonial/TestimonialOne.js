@@ -19,7 +19,7 @@ const TestimonialOne = ({ darkBg }) => {
               <h4 className="h5 text-warning text-primary">
                 {/* Hakkımızda */}
               </h4>
-              <h2>Hakkımızda</h2>
+              <h2>Kurumsal</h2>
               <p>Römork ve Treyler Ekipmanı</p>
             </div>
           </div>
