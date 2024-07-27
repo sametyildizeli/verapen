@@ -8,12 +8,16 @@ import FeatureOne from "@components/features/FeatureOne";
 import TabOne from "@components/tabs/TabOne";
 import CyberAbout from "@components/our-story/CyberAbout";
 import CustomerLogoSlider from "@components/customer/CustomerLogoSlider";
+import NavbarOriginal from "@layout/Header/NavbarOriginal";
+import HeroSectionOneOriginal from "@components/hero-section/HeroSectionOneOriginal";
 
 export default function Home() {
   return (
     <Layout>
       <Navbar navDark />
+      {/* <NavbarOriginal navDark /> */}
       <HeroSectionOne />
+      {/* <HeroSectionOneOriginal /> */}
       <CustomerLogoSlider />
       <CyberAbout />
       <FeatureOne />

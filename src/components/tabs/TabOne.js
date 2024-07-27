@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import Link from 'next/link';
-import { FiArrowRight } from 'react-icons/fi';
+import React from "react";
+import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
 
-import SectionTitle from '../common/SectionTitle';
+import SectionTitle from "../common/SectionTitle";
 
 const TabOne = () => {
   return (
@@ -38,7 +38,7 @@ const TabOne = () => {
                     role="tab"
                     aria-selected="false"
                   >
-                    AI & Data Science
+                    İç Oda Kapısı
                   </a>
                 </Link>
               </li>
@@ -52,7 +52,7 @@ const TabOne = () => {
                     role="tab"
                     aria-selected="false"
                   >
-                    Automation Power
+                    Cam Balkon
                   </a>
                 </Link>
               </li>
@@ -66,7 +66,21 @@ const TabOne = () => {
                     role="tab"
                     aria-selected="false"
                   >
-                    Advanced Technology
+                    PVC Sistemler
+                  </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="#!">
+                  <a
+                    className="nav-link"
+                    to="#tab-4"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-4"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Alüminyum Sistemler
                   </a>
                 </Link>
               </li>
@@ -78,24 +92,41 @@ const TabOne = () => {
                 role="tabpanel"
               >
                 <div className="row justify-content-center align-items-center justify-content-around">
-                  <div className="col-lg-5">
+                  <div className="col-lg-6">
                     <div className="feature-tab-info">
-                      <h3>AI & Data Science</h3>
+                      <h3>Laquer Touch İç Oda Kapısı</h3>
                       <p>
-                        Continually network effective bandwidth whereas
-                        goal-oriented schemas. Intrinsicly incentivize corporate
-                        synergy with accurate task bricks-and-clicks leadership
-                        skills .{' '}
+                        • Modern Tasarım: Minimalist ve şık çizgileriyle her
+                        türlü dekorasyon tarzına uyum sağlar.{" "}
                       </p>
                       <p>
-                        Conveniently develop innovative infomediaries for
-                        enabled functionalities. Dynamically coordinate
-                        leading-edge after virtual potentialities drive
-                        multidisciplinary infrastructures.
+                        • Yüksek Kalite Malzeme: Dayanıklı ve uzun ömürlü
+                        kullanıma uygun kaliteli malzemelerden üretilmiştir.
+                      </p>
+                      <p>
+                        • Pürüzsüz Yüzey: Lake kaplama sayesinde pürüzsüz ve
+                        parlak bir yüzeye sahiptir.{" "}
+                      </p>
+                      <p>
+                        • Renk Seçenekleri: Çeşitli renk ve desen seçenekleriyle
+                        kişisel zevklerinize ve dekorasyonunuza uygun seçimler
+                        yapabilirsiniz.
+                      </p>
+                      <p>
+                        • Kolay Temizlik: Leke tutmayan yüzeyi sayesinde
+                        temizliği oldukça kolaydır.{" "}
+                      </p>
+                      <p>
+                        • Ses Yalıtımı: Özel yapısı sayesinde ses yalıtımı
+                        sağlar, odalar arası ses geçişini azaltır.
+                      </p>
+                      <p>
+                        • Güvenlik: Sağlam yapısı ve kaliteli kilit sistemiyle
+                        güvenli bir kullanım sunar.
                       </p>
                       <Link href="/about-us">
                         <a className="read-more-link text-decoration-none mt-4 d-block">
-                          Know More About Us
+                          Ürünleri inceleyin
                           <span className="far ms-2 mb-1">
                             <FiArrowRight />
                           </span>
@@ -105,7 +136,7 @@ const TabOne = () => {
                   </div>
                   <div className="col-lg-5">
                     <img
-                      src="/screen/widget-12.png"
+                      src="/_images/tab-1.png"
                       alt="feature tab"
                       className="img-fluid mt-4 mt-lg-0 mt-xl-0"
                     />
@@ -116,29 +147,54 @@ const TabOne = () => {
                 <div className="row justify-content-center align-items-center justify-content-around">
                   <div className="col-lg-5">
                     <img
-                      src="/screen/widget-8.png"
+                      src="/_images/tab-2.png"
                       alt="feature tab"
                       className="img-fluid mb-4 mb-lg-0 mb-xl-0"
                     />
                   </div>
-                  <div className="col-lg-5">
+                  <div className="col-lg-6">
                     <div className="feature-tab-info">
-                      <h3>Automation Power</h3>
+                      <h3>Albert Genau Cam Balkon Isı Cam Sistemleri</h3>
                       <p>
-                        Conveniently develop innovative infomediaries for
-                        enabled functionalities. Dynamically coordinate
-                        leading-edge corporate synergy after virtual
-                        potentialities.
+                        • Yüksek Isı Yalıtımı: Özel ısı camları sayesinde, kış
+                        aylarında soğuk hava girişini engelleyerek ısı kaybını
+                        minimize eder ve enerji tasarrufu sağlar.
                       </p>
                       <p>
-                        Continually network effective bandwidth whereas
-                        goal-oriented schemas. Intrinsicly with accurate
-                        meta-services. Rapidiously parallel task
-                        bricks-and-clicks leadership skills with revolutionary.{' '}
+                        • Estetik Tasarım: Şeffaf ve modern cam panellerle
+                        balkonlarınızın görünümünü güzelleştirir, geniş ve ferah
+                        bir ortam sunar.
+                      </p>
+                      <p>
+                        • Fonksiyonellik: Kolayca açılıp kapanabilen sürgülü ve
+                        katlanabilir cam sistemleri, kullanım kolaylığı ve
+                        esneklik sağlar.
+                      </p>
+                      <p>
+                        • Dayanıklılık: Yüksek kaliteli malzemelerden üretilen
+                        sistemler, uzun ömürlü kullanım sunar ve dış etkenlere
+                        karşı dayanıklıdır.
+                      </p>
+                      <p>
+                        • Ses Yalıtımı: Isı camları aynı zamanda ses yalıtımı
+                        sağlayarak, gürültüyü önemli ölçüde azaltır ve daha
+                        huzurlu bir ortam yaratır.
+                      </p>
+                      <p>
+                        • Güvenlik: Güçlendirilmiş cam ve sağlam profiller,
+                        güvenli bir kullanım sunar.
+                      </p>
+                      <p>
+                        • Kolay Temizlik: Cam yüzeyler kolayca temizlenebilir,
+                        düşük bakım gerektirir.
+                      </p>
+                      <p>
+                        • Çok Yönlülük: Her türlü balkon yapısına ve boyutuna
+                        uyum sağlayacak şekilde özelleştirilebilir.
                       </p>
                       <Link href="/about-us">
                         <a className="read-more-link text-decoration-none mt-4 d-block">
-                          Know More About Us
+                          Ürünleri inceleyin
                           <span className="far ms-2 mb-1">
                             <FiArrowRight />
                           </span>
@@ -150,24 +206,57 @@ const TabOne = () => {
               </div>
               <div className="tab-pane fade pt-60" id="tab-3" role="tabpanel">
                 <div className="row justify-content-center align-items-center justify-content-around">
-                  <div className="col-lg-5">
+                  <div className="col-lg-6">
                     <div className="feature-tab-info">
-                      <h3>Advanced Technology</h3>
+                      <h3>PVC Cam ve Kapı Sistemleri</h3>
                       <p>
-                        Intrinsicly incentivize corporate synergy with accurate
-                        meta-services. Rapidiously parallel task
-                        bricks-and-clicks. Leadership skills with revolutionary
-                        convergence conveniently develop.
+                        • Yüksek Enerji Verimliliği: PVC malzemeler, mükemmel
+                        yalıtım özellikleri sayesinde ısı kaybını azaltır,
+                        enerji tasarrufu sağlar ve yaşam alanlarınızı kışın
+                        sıcak, yazın serin tutar.
                       </p>
                       <p>
-                        Continually expedite business systems without premier
-                        testing procedures architect principle-centered
-                        e-tailers for progressive maintain open-source
-                        solutions.{' '}
+                        • Dayanıklılık: PVC kapı ve pencereler, uzun ömürlü
+                        kullanım sağlar ve dış etkenlere karşı dayanıklıdır.
+                        Paslanma, çürüme veya deformasyon gibi sorunlarla
+                        karşılaşmaz.
                       </p>
+                      <p>
+                        • Kolay Bakım: PVC sistemler, düşük bakım gerektirir.
+                        Temizlenmesi kolaydır ve uzun yıllar boyunca yeni gibi
+                        görünür.
+                      </p>
+                      <p>
+                        {" "}
+                        • Ses Yalıtımı: Yüksek kaliteli PVC pencereler ve
+                        kapılar, dış ortamdan gelen gürültüyü önemli ölçüde
+                        azaltır, daha sessiz ve huzurlu bir yaşam alanı sunar.
+                      </p>
+                      <p>
+                        • Güvenlik: Güçlendirilmiş çelik profiller ve çok
+                        noktadan kilitleme sistemleri ile yüksek güvenlik
+                        sağlar.
+                      </p>
+                      <p>
+                        {" "}
+                        • Çevre Dostu: PVC malzemeler, geri dönüştürülebilir
+                        özellikleri sayesinde çevre dostudur ve sürdürülebilir
+                        bir çözüm sunar.
+                      </p>
+                      <p>
+                        • Estetik Çeşitlilik: Farklı renk ve desen
+                        seçenekleriyle, her türlü dekorasyon tarzına uyum sağlar
+                        ve yaşam alanlarınıza estetik bir dokunuş katar.
+                      </p>
+                      <p>
+                        {" "}
+                        • Kolay Kurulum: Profesyonel ekipler tarafından hızlı ve
+                        kolay bir şekilde monte edilebilir.
+                      </p>
+
                       <Link href="/about-us">
                         <a className="read-more-link text-decoration-none mt-4 d-block">
-                          Know More About Us
+                          Ürünleri inceleyin
                           <span className="far ms-2 mb-1">
                             <FiArrowRight />
                           </span>
@@ -177,10 +266,74 @@ const TabOne = () => {
                   </div>
                   <div className="col-lg-5">
                     <img
-                      src="/screen/widget-11.png"
+                      src="/_images/tab-3.png"
                       alt="feature tab"
                       className="img-fluid mt-4 mt-lg-0 mt-xl-0"
                     />
+                  </div>
+                </div>
+              </div>
+              <div className="tab-pane fade pt-60" id="tab-4" role="tabpanel">
+                <div className="row justify-content-center align-items-center justify-content-around">
+                  <div className="col-lg-5">
+                    <img
+                      src="/_images/tab-4.png"
+                      alt="feature tab"
+                      className="img-fluid mb-4 mb-lg-0 mb-xl-0"
+                    />
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="feature-tab-info">
+                      <h3>Alüminyum Sistemleri</h3>
+                      <p>
+                        • Dayanıklılık: Alüminyum, korozyona ve hava koşullarına
+                        karşı son derece dayanıklıdır, bu nedenle uzun ömürlü
+                        kullanım sunar.
+                      </p>
+                      <p>
+                        • Hafiflik: Malzemenin hafifliği, montaj ve taşıma
+                        süreçlerini kolaylaştırır, aynı zamanda yapının genel
+                        ağırlığını azaltır.
+                      </p>
+                      <p>
+                        • Estetik Tasarım: Modern ve şık görünümüyle estetik
+                        açıdan göz alıcı çözümler sunar. Farklı renk ve kaplama
+                        seçenekleri ile her türlü dekorasyon stiline uyum
+                        sağlar.
+                      </p>
+                      <p>
+                        • Enerji Verimliliği: Alüminyum profiller, termal
+                        kırılma özelliği sayesinde ısı yalıtımı sağlar ve enerji
+                        tasarrufuna katkıda bulunur.
+                      </p>
+                      <p>
+                        • Geniş Uygulama Alanı: Pencerelerden kapılara, cephe
+                        sistemlerinden kış bahçelerine kadar çok çeşitli
+                        alanlarda kullanılabilir.
+                      </p>
+                      <p>
+                        • Düşük Bakım: Alüminyum, bakım gerektirmeyen bir
+                        malzemedir. Temizlenmesi kolaydır ve uzun yıllar boyunca
+                        ilk günkü gibi kalır.
+                      </p>
+                      <p>
+                        • Güvenlik: Güçlendirilmiş yapısı ve çok noktadan
+                        kilitleme sistemleri ile yüksek güvenlik sağlar.
+                      </p>
+                      <p>
+                        • Çevre Dostu: Alüminyum tamamen geri dönüştürülebilir
+                        bir malzemedir, bu nedenle çevre dostudur ve
+                        sürdürülebilir bir çözüm sunar
+                      </p>
+                      <Link href="/about-us">
+                        <a className="read-more-link text-decoration-none mt-4 d-block">
+                          Ürünleri inceleyin
+                          <span className="far ms-2 mb-1">
+                            <FiArrowRight />
+                          </span>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

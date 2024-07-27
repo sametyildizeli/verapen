@@ -7,7 +7,7 @@ const CustomerLogoSlider = () => {
   const swiperOption = {
     slidesPerView: 2,
     speed: 700,
-    spaceBetween: 20,
+    spaceBetween: 50,
     slidesPerGroup: 2,
     loop: true,
     breakpoints: {
@@ -36,27 +36,22 @@ const CustomerLogoSlider = () => {
             <Swiper {...swiperOption}>
               <SwiperSlide>
                 <div className="cyber-brand-logo text-center">
-                  <Image src="/clients/slack_logo.png" width={135} height={34} alt="logo"  />
+                  <Image src="/_images/brands/brand-1.png" width={107.9} height={42.11} alt="logo"  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="cyber-brand-logo text-center">
-                  <Image src="/clients/logo2.png" width={172} height={28}  alt="logo " />
+                  <Image src="/_images/brands/brand-2.png" width={345/2} height={91/2}  alt="logo" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="cyber-brand-logo text-center">
-                  <Image src="/clients/logo3.png" width={161} height={29}  alt="logo" />
+                  <Image src="/_images/brands/brand-3.png" width={208/2} height={142/2}  alt="logo" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="cyber-brand-logo text-center">
-                  <Image src="/clients/logo4.png" width={150} height={26}  alt="logo" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="cyber-brand-logo text-center">
-                  <Image src="/clients/logo5.png" width={153} height={29}  alt="logo" />
+                  <Image src="/_images/brands/brand-4.png" width={330/2} height={129/2}  alt="logo" />
                 </div>
               </SwiperSlide>
             </Swiper>

@@ -15,7 +15,7 @@ const Layout = ({ children, title, desc, hasClass, classOpt }) => {
             : "Verapen Resmi Websitesi"}
         </title>
         {desc && <meta name="description" content={desc} />}
-        {/* <link rel="icon" href="/favicon.png" /> */}
+        <link rel="icon" href="/_images/favicon.png" />
       </Head>
 
       {children}

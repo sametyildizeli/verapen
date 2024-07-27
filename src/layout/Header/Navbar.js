@@ -33,8 +33,8 @@ const Navbar = ({ navDark, insurance, classOption }) => {
       }`}
     >
       <nav
-        className={`navbar navbar-expand-xl z-50 ${"navbar-dark"} sticky-header ${
-          scroll > headerTop ? "affix" : "affix"
+        className={`navbar navbar-expand-xl z-50 ${navDark ? "navbar-dark" : "navbar-light"} sticky-header ${
+          scroll > headerTop ? "affix" : ""
         }`}
         style={
           scroll > headerTop
