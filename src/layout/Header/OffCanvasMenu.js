@@ -17,8 +17,8 @@ const OffCanvasMenu = () => {
         </li>
 
         <li data-bs-dismiss="offcanvas" aria-label="Close">
-          <Link href="/">
-            <a className="nav-link">Anasayfa</a>
+          <Link href="/about-us">
+            <a className="nav-link">Kurumsal</a>
           </Link>
         </li>
 
@@ -30,31 +30,59 @@ const OffCanvasMenu = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Kurumsal
+            Ürünler
           </a>
           <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
             <div className="dropdown-grid rounded-custom width-full">
               <span>
-                <Link href={"/about-us"}>
+                <Link href={"/products?category=Bakış İç Oda Kapısı"}>
                   <a
                     className="dropdown-link px-0"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   >
-                    <span className="drop-title mb-0"> Hakkımızda </span>
+                    <span className="drop-title mb-0"> Bakış İç Oda Kapısı </span>
                   </a>
                 </Link>
               </span>
             </div>
             <div className="dropdown-grid rounded-custom width-full">
               <span>
-                <Link href={"/track"}>
+                <Link href={"/products?category=Albertgenau Balkon Sistemleri"}>
                   <a
                     className="dropdown-link px-0"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   >
-                    <span className="drop-title mb-0"> Makine Parkuru </span>
+                    <span className="drop-title mb-0"> Albert Genau Cam Balkon </span>
+                  </a>
+                </Link>
+              </span>
+            </div>
+            <div className="dropdown-grid rounded-custom width-full">
+              <span>
+                <Link href={"/products?category=Egepen PVC Sistemleri"}>
+                  <a
+                    className="dropdown-link px-0"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  >
+                    <span className="drop-title mb-0"> Egepen PVC Sistemleri </span>
+                  </a>
+                </Link>
+              </span>
+            </div>
+            <div className="dropdown-grid rounded-custom width-full">
+              <span>
+                <Link
+                  href={"/products?category=IQ Aluminyum Aluminyum Sistemleri"}
+                >
+                  <a
+                    className="dropdown-link px-0"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  >
+                    <span className="drop-title mb-0"> Aluminyum Sistemleri </span>
                   </a>
                 </Link>
               </span>
