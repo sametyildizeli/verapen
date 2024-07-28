@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { productsGallery } from "@utils/data";
+import LazyLoad from "react-lazyload";
 
-const ProductGallery = ({ category, subCategory }) => {
+const ProductGallery = ({ category, subCategory, images }) => {
   const [modalImageIndex, setModalImageIndex] = useState(null);
-  const [images, setImages] = useState([]);
+  const [galleryImages, setGalleryImages] = useState([]);
 
   useEffect(() => {
-    console.log(`Category: ${category}, SubCategory: ${subCategory}`);
-    if (category && subCategory && productsGallery.categories[category] && productsGallery.categories[category].subcategories[subCategory]) {
-      const subCategoryImages = productsGallery.categories[category].subcategories[subCategory];
-      console.log(`Images for ${subCategory}:`, subCategoryImages);
-      setImages(subCategoryImages);
+    if (images) {
+      setGalleryImages(images);
+    } else if (
+      category &&
+      subCategory &&
+      productsGallery.categories[category] &&
+      productsGallery.categories[category].subcategories[subCategory]
+    ) {
+      const subCategoryImages =
+        productsGallery.categories[category].subcategories[subCategory];
+      setGalleryImages(subCategoryImages);
     }
-  }, [category, subCategory]);
+  }, [category, subCategory, images]);
 
   const handleOpenModal = (index) => {
     setModalImageIndex(index);
@@ -24,13 +31,13 @@ const ProductGallery = ({ category, subCategory }) => {
 
   const handlePrevImage = () => {
     setModalImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1
     );
   };
 
   const handleNextImage = () => {
     setModalImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === galleryImages.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -38,23 +45,25 @@ const ProductGallery = ({ category, subCategory }) => {
     <section className="office-address-section ptb-30">
       <div className="container">
         <div className="row">
-          {images.map((image, index) => (
+          {galleryImages.map((image, index) => (
             <div
               className="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0 mb-5"
               key={index}
             >
-              <div
-                className="rounded-custom border d-block office-address overflow-hidden z-2"
-                style={{
-                  background: `url('${image}') no-repeat center center / cover`,
-                  height: "200px",
-                }}
-                onClick={() => handleOpenModal(index)}
-              >
-                <div className="office-content text-center p-4">
-                  <span className="office-overlay"></span>
+              <LazyLoad key={index} height={200} offset={100} once>
+                <div
+                  className="rounded-custom border d-block office-address overflow-hidden z-2"
+                  style={{
+                    background: `url('${image}') no-repeat center center / cover`,
+                    height: "200px",
+                  }}
+                  onClick={() => handleOpenModal(index)}
+                >
+                  <div className="office-content text-center p-4">
+                    <span className="office-overlay"></span>
+                  </div>
                 </div>
-              </div>
+              </LazyLoad>
             </div>
           ))}
         </div>
@@ -69,7 +78,7 @@ const ProductGallery = ({ category, subCategory }) => {
             <span className="gallery-modal-close" onClick={handleCloseModal}>
               &times;
             </span>
-            <img src={images[modalImageIndex]} alt="modal" />
+            <img src={galleryImages[modalImageIndex]} alt="modal" />
             <div className="gallery-modal-navigation">
               <span
                 className="gallery-modal-prev-icon"

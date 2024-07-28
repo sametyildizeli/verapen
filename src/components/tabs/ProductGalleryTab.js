@@ -3,23 +3,36 @@ import { productsGallery } from '@utils/data';
 import ProductGallery from '@components/custom/ProductGallery';
 
 const ProductGalleryTab = () => {
-  const [activeCategory, setActiveCategory] = useState('');
-  const [activeSubCategory, setActiveSubCategory] = useState('');
+  const [activeCategory, setActiveCategory] = useState('Tümü');
+  const [activeSubCategory, setActiveSubCategory] = useState('All');
+
+  // Function to flatten all images
+  const getAllImages = () => {
+    return Object.values(productsGallery.categories).flatMap(category =>
+      Object.values(category.subcategories).flat()
+    );
+  };
 
   useEffect(() => {
-    const firstCategory = Object.keys(productsGallery.categories)[0];
-    setActiveCategory(firstCategory);
-    setActiveSubCategory(Object.keys(productsGallery.categories[firstCategory].subcategories)[0]);
+    setActiveCategory('Tümü');
+    setActiveSubCategory('All');
   }, []);
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
-    setActiveSubCategory(Object.keys(productsGallery.categories[category].subcategories)[0]);
+    if (category === 'Tümü') {
+      setActiveSubCategory('All');
+    } else {
+      const subCategory = Object.keys(productsGallery.categories[category].subcategories)[0];
+      setActiveSubCategory(subCategory);
+    }
   };
 
   const handleSubCategoryClick = (subCategory) => {
     setActiveSubCategory(subCategory);
   };
+
+  const allImages = getAllImages();
 
   return (
     <section className="portfolio bg-light ptb-120">
@@ -36,6 +49,14 @@ const ProductGalleryTab = () => {
           <div className="col-lg-12 col-md-6">
             <div className="tab-button mb-5">
               <ul className="nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li className="nav-item" role="presentation">
+                  <button
+                    className={`nav-link ${activeCategory === 'Tümü' ? 'active' : ''}`}
+                    onClick={() => handleCategoryClick('Tümü')}
+                  >
+                    Tümü
+                  </button>
+                </li>
                 {Object.keys(productsGallery.categories).map((category) => (
                   <li className="nav-item" role="presentation" key={category}>
                     <button
@@ -50,7 +71,7 @@ const ProductGalleryTab = () => {
             </div>
           </div>
 
-          {activeCategory && (
+          {activeCategory && activeCategory !== 'Tümü' && (
             <div className="col-lg-12 col-md-6">
               <div className="tab-button mb-5">
                 <ul className="nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
@@ -71,7 +92,11 @@ const ProductGalleryTab = () => {
 
           <div className="tab-content" id="pills-tabContent">
             <div className="tab-pane fade show active" id="damperli-romork" role="tabpanel" aria-labelledby="damperli-romork-tab">
-              <ProductGallery category={activeCategory} subCategory={activeSubCategory} />
+              {activeCategory === 'Tümü' ? (
+                <ProductGallery images={allImages} />
+              ) : (
+                <ProductGallery category={activeCategory} subCategory={activeSubCategory} />
+              )}
             </div>
           </div>
         </div>
