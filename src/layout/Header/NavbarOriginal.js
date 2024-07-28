@@ -143,7 +143,11 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
                         </Link>
                       </div>
                       <div>
-                        <Link href={"/products?category=Albertgenau Balkon Sistemleri"}>
+                        <Link
+                          href={
+                            "/products?category=Albertgenau Balkon Sistemleri"
+                          }
+                        >
                           <a className="dropdown-link px-0">
                             <span className="me-2">
                               <img
@@ -177,7 +181,11 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
                         </Link>
                       </div>
                       <div>
-                        <Link href={"/products?category=IQ Aluminyum Aluminyum Sistemleri"}>
+                        <Link
+                          href={
+                            "/products?category=IQ Aluminyum Aluminyum Sistemleri"
+                          }
+                        >
                           <a className="dropdown-link px-0">
                             <span className="me-2">
                               <img
@@ -216,18 +224,19 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
             </ul>
           </div>
 
-          <div className="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-            <Link href="request-demo">
-              <a
-                className={
-                  scroll > headerTop
-                    ? "btn btn-primary header-catalog-btn"
-                    : "btn btn-primary header-catalog-btn"
-                }
-              >
-                <b>E-KATALOG</b>
-              </a>
-            </Link>
+          <div className="action-btns text-end me-5 me-lg-0 d-none d-md-none d-xl-block mr-3">
+          <Link href="/e-catalog/Verapen_E-Katalog.pdf">
+            <a
+              className={
+                scroll > headerTop
+                  ? "btn btn-primary header-catalog-btn"
+                  : "btn btn-primary header-catalog-btn"
+              }
+              target="_blank"
+            >
+              <b>E-KATALOG</b>
+            </a>
+          </Link>
           </div>
 
           <div
@@ -241,7 +250,7 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
                   <img
                     width={150}
                     // height={36}
-                    src="/_images/verapen-logo.png"
+                    src="/_images/verapen-logo-dark.png"
                     alt="logo"
                     className="img-fluid ps-2"
                   />

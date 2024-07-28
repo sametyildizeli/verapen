@@ -24,7 +24,7 @@ const GalleryTab = () => {
         </div>
         <div className="row">
           <div className="col-12">
-            <ul
+            {/* <ul
               className="nav justify-content-center feature-tab-list-2 mb-0"
               id="nav-tab"
               role="tablist"
@@ -39,7 +39,7 @@ const GalleryTab = () => {
                     role="tab"
                     aria-selected="false"
                   >
-                    Kampanyalar
+                    Kampanyalar ve Duyurular
                   </a>
                 </Link>
               </li>
@@ -53,11 +53,11 @@ const GalleryTab = () => {
                     role="tab"
                     aria-selected="false"
                   >
-                    Duyurular
+                    
                   </a>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
             <div className="tab-content" id="nav-tabContent">
               <div
                 className="tab-pane fade pt-60 active show"
