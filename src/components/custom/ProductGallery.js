@@ -7,12 +7,6 @@ const CampaignGallery = () => {
     "/_images/campaigns/campaign-2.png",
     "/_images/campaigns/campaign-3.png",
     "/_images/campaigns/campaign-4.png",
-    "/_images/campaigns/campaign-5.png",
-    "/_images/campaigns/campaign-6.png",
-    "/_images/campaigns/campaign-7.png",
-    "/_images/campaigns/campaign-8.png",
-    "/_images/campaigns/campaign-9.png",
-    "/_images/campaigns/campaign-10.png",
   ];
 
   const handleOpenModal = (index) => {
@@ -41,7 +35,10 @@ const CampaignGallery = () => {
         <div className="row">
           {/* Iterate over your images */}
           {images.map((image, index) => (
-            <div className="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0 mb-5" key={index}>
+            <div
+              className="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0 mb-5"
+              key={index}
+            >
               <div
                 className="rounded-custom border d-block office-address overflow-hidden z-2"
                 style={{
@@ -61,24 +58,30 @@ const CampaignGallery = () => {
 
       {modalImageIndex !== null && (
         <div className="gallery-modal">
-        <div
-          className="gallery-modal-content"
-          style={{ position: "relative" }}
-        >
-          <span className="gallery-modal-close" onClick={handleCloseModal}>
-            &times;
-          </span>
-          <img src={images[modalImageIndex]} alt="modal" />
-          <div className="gallery-modal-navigation">
-            <span className="gallery-modal-prev-icon" onClick={handlePrevImage}>
-              &#10094;
+          <div
+            className="gallery-modal-content"
+            style={{ position: "relative" }}
+          >
+            <span className="gallery-modal-close" onClick={handleCloseModal}>
+              &times;
             </span>
-            <span className="gallery-modal-next-icon" onClick={handleNextImage}>
-              &#10095;
-            </span>
+            <img src={images[modalImageIndex]} alt="modal" />
+            <div className="gallery-modal-navigation">
+              <span
+                className="gallery-modal-prev-icon"
+                onClick={handlePrevImage}
+              >
+                &#10094;
+              </span>
+              <span
+                className="gallery-modal-next-icon"
+                onClick={handleNextImage}
+              >
+                &#10095;
+              </span>
+            </div>
           </div>
         </div>
-      </div>
       )}
     </section>
   );
