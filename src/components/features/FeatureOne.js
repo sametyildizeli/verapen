@@ -138,7 +138,10 @@ const FeatureOne = () => {
                 </div>
                 <div className="action-btns mt-auto">
                   <Link href="/request-demo">
-                    <a className="btn btn-outline-primary btn-sm">
+                    <a
+                      className="btn btn-outline-primary btn-sm"
+                      style={{ color: "white", borderColor: "white" }}
+                    >
                       Ürünlere Göz Atın{" "}
                     </a>
                   </Link>
@@ -174,6 +177,7 @@ const FeatureOne = () => {
                     <a
                       className="btn btn-outline-primary btn-sm"
                       target="_blank"
+                      style={{ color: "white", borderColor: "white" }}
                     >
                       Bize WhatsApp'tan Ulaşın
                     </a>
