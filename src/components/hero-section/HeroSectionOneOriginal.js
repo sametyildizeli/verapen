@@ -46,29 +46,38 @@ const HeroSectionOneOriginal = () => {
               </div>
               <div className="row justify-content-lg-start mt-60">
                 <h6 className="text-white-70 mb-2">Our Top Clients:</h6>
-                <div className="col-4 col-sm-3 my-2 ps-lg-0">
+                <div className="col-3 col-sm-3 my-2 p-0 m-0 ps-lg-0">
                   <Image
-                    width={141}
-                    height={56}
-                    src="/clients/client-1.svg"
+                    width={85}
+                    height={32}
+                    src="/_images/brands/h-brand-1.png"
                     alt="client"
                     className="img-fluid"
                   />
                 </div>
-                <div className="col-4 col-sm-3 my-2">
+                <div className="col-3 col-sm-3 my-2 p-0 m-0">
                   <Image
-                    width={141}
-                    height={56}
-                    src="/clients/client-2.svg"
+                    width={53}
+                    height={36}
+                    src="/_images/brands/h-brand-2.png"
                     alt="client"
                     className="img-fluid"
                   />
                 </div>
-                <div className="col-4 col-sm-3 my-2">
+                <div className="col-3 col-sm-3 my-2 p-0 m-0">
                   <Image
-                    width={141}
-                    height={56}
-                    src="/clients/client-3.svg"
+                    width={89}
+                    height={23}
+                    src="/_images/brands/h-brand-3.png"
+                    alt="client"
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="col-3 col-sm-3 my-2 p-0 m-0">
+                  <Image
+                    width={85}
+                    height={33}
+                    src="/_images/brands/h-brand-4.png"
                     alt="client"
                     className="img-fluid"
                   />

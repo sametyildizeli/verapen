@@ -17,7 +17,8 @@
 @import 'base/helpers';
 
 // 4. Layout-related sections
-@import 'layout/header';
+// @import 'layout/header';
+@import 'layout/header_orig';
 @import 'layout/footer';
 @import 'layout/preloader';
 
@@ -30,6 +31,7 @@
 @import 'components/promo';
 @import 'components/call-to-action';
 @import 'components/hero';
+// @import 'components/hero_orig';
 @import 'components/custom-slider-style';
 @import 'components/custom-slider-style-2';
 @import 'components/about';

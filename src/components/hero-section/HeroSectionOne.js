@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import ModalVideo from "react-modal-video";
 import { FaCircle } from "react-icons/fa";
+import { IoPlayCircleOutline } from "react-icons/io5";
+import Image from "next/image";
 
 const sliderProductData = [
   {
     key: 0,
     id: "0",
-    title: `Verapen'e Hoşgeldiniz`,
+    title: `İç Oda Kapısı, Cam Balkon Sistemleri, PVC Doğrama ve Aluminyum Sistemleri`,
     description: `İç Oda Kapısı, Cam Balkon Sistemleri, PVC Doğrama ve Aluminyum Sistemleri`,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/_images/slider-products/p-0.png",
@@ -44,9 +46,9 @@ const HeroSectionOne = () => {
 
   const setSliderItem = (id) => {
     setLoading(true);
-    const img = new Image();
-    img.src = `/_images/sliders/slider-${id}.png`;
-    img.onload = () => {
+    const imageLoader = new window.Image(); // Renamed the Image instance to imageLoader
+    imageLoader.src = `/_images/sliders/slider-${id}.png`;
+    imageLoader.onload = () => {
       setActiveBg(id);
       setLoading(false);
       setTimeout(() => {
@@ -67,8 +69,8 @@ const HeroSectionOne = () => {
 
   return (
     <section
-      className="hero-section text-white bg-gradient-header"
-      style={{ padding: "10rem !important" }}
+      className="hero-section ptb-120 text-white bg-gradient-header"
+      // style={{ padding: "10rem !important" }}
     >
       <div
         className="hero-background"
@@ -92,25 +94,34 @@ const HeroSectionOne = () => {
         onClose={() => setOpen(false)}
       />
       <div
-        className="container hero-section-container-height"
-        style={{ position: "relative", marginTop: "2.5rem" }}
+        className="container "
+        // hero-section-container-height
+        style={{ position: "relative", height: "-webkit-fill-available" }}
       >
         {sliderProductData.map((item, index) => (
           <div
             key={index}
-            className={`row align-items-center ${
+            className={`row ${
               activeIndex === index ? "fade show active" : "fade"
             }`}
             style={{
               transition: "opacity 0.5s ease",
               position: "absolute",
+              height: "100%",
+              // "-webkit-fill-available",
               zIndex: activeIndex === index ? "1" : "0",
             }}
           >
-            <div className="col-lg-5 col-md-12 hero-section-container">
+            <div className="col-lg-6 col-md-12 hero-section-container">
               <div
                 className="hero-content-wrap mt-0 mt-lg-0 mt-xl-0"
-                style={{ height: "100%" }}
+                style={{
+                  height: "100%",
+                  alignItems: "flex-start",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                }}
               >
                 <h1
                   className="display-4 fw-bolder"
@@ -121,42 +132,73 @@ const HeroSectionOne = () => {
                 <br />
 
                 <div className="action-btns align-items-center flex d-sm-flex d-lg-flex d-md-flex">
-                  <Link href={`/product/${item.key}`}>
-                    <a
-                      className="btn btn-primary me-3 d-flex justify-content-between align-items-center"
-                      style={{ backgroundColor: "#3C3C3B" }}
-                    >
-                      <h6 style={{ color: "white", margin: "0 0.5rem 0 0 " }}>
-                        ÜRÜNÜ İNCELE
-                      </h6>
-                      <img
-                        src="/arrow-right.svg"
-                        alt="arrow-right"
-                        className="img-fluid"
-                      />
-                    </a>
+                  <Link href="/request-demo">
+                    <a className="btn btn-primary me-3">Detaylı Bilgi</a>
                   </Link>
-
-                  <div className="">
+                  <div>
                     <a
-                      onClick={() => setOpen(true)}
+                      href="#!"
+                      // onClick={() => setOpen(true)}
                       type="button"
-                      className="text-white text-decoration-none d-flex align-items-center watch-now-btn"
+                      className="text-white text-decoration-none d-inline-flex align-items-center watch-now-btn"
                     >
-                      <img
-                        src={"/icon-yt.svg"}
-                        alt="hero img"
-                        className="me-2"
-                      />
-                      <span style={{ color: "#3C3C3B" }}>ÜRÜN VİDEOSU</span>
+                      <IoPlayCircleOutline className="me-2 text-white" /> Tanıtım Videosu
                     </a>
+                  </div>
+                </div>
+                <div className="row justify-content-lg-start mt-60">
+                  <h6 className="text-white-70 mb-2">Bayiliklerimiz:</h6>
+                  <div className="col-3 col-sm-3 d-flex alig-items-center justify-content-center my-2 pl-1 m-0">
+                    <Image
+                      width={85}
+                      height={32}
+                      src="/_images/brands/h-brand-1.png"
+                      alt="client"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="col-3 col-sm-3 d-flex alig-items-center justify-content-center my-2 p-0 m-0">
+                    <Image
+                      width={53}
+                      height={36}
+                      src="/_images/brands/h-brand-2.png"
+                      alt="client"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="col-3 col-sm-3 d-flex alig-items-center justify-content-center my-2 p-0 m-0">
+                    <Image
+                      width={89}
+                      height={23}
+                      src="/_images/brands/h-brand-3.png"
+                      alt="client"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="col-3 col-sm-3 d-flex alig-items-center justify-content-center my-2 p-0 m-0">
+                    <Image
+                      width={85}
+                      height={33}
+                      src="/_images/brands/h-brand-4.png"
+                      alt="client"
+                      className="img-fluid"
+                    />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 col-md-12 mt-5">
+            <div
+              className="col-lg-6 col-md-12"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
               <div className="hero-img position-relative circle-shape-images">
                 <img
+                  maxHeight="717px"
+                  maxWidth="744px"
                   src={item.productImg}
                   alt="hero img"
                   className="img-fluid position-relative z-5"

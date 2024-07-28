@@ -14,8 +14,8 @@ import HeroSectionOneOriginal from "@components/hero-section/HeroSectionOneOrigi
 export default function Home() {
   return (
     <Layout>
-      <Navbar navDark />
-      {/* <NavbarOriginal navDark /> */}
+      {/* <Navbar navDark /> */}
+      <NavbarOriginal navDark />
       <HeroSectionOne />
       {/* <HeroSectionOneOriginal /> */}
       <CustomerLogoSlider />
