@@ -6,8 +6,11 @@ const ProductGallery = ({ category, subCategory }) => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
+    console.log(`Category: ${category}, SubCategory: ${subCategory}`);
     if (category && subCategory && productsGallery.categories[category] && productsGallery.categories[category].subcategories[subCategory]) {
-      setImages(productsGallery.categories[category].subcategories[subCategory]);
+      const subCategoryImages = productsGallery.categories[category].subcategories[subCategory];
+      console.log(`Images for ${subCategory}:`, subCategoryImages);
+      setImages(subCategoryImages);
     }
   }, [category, subCategory]);
 
@@ -44,6 +47,7 @@ const ProductGallery = ({ category, subCategory }) => {
                 className="rounded-custom border d-block office-address overflow-hidden z-2"
                 style={{
                   background: `url('${image}') no-repeat center center / cover`,
+                  height: "200px",
                 }}
                 onClick={() => handleOpenModal(index)}
               >
