@@ -1,0 +1,113 @@
+{
+    "categories": {
+      "Bakış İç Oda Kapısı": {
+        "subcategories": {
+          "Stok Kapılar": [
+            "/_images/BakisIcOdaKapisi/StokKapilar/image1.png",
+            "/_images/BakisIcOdaKapisi/StokKapilar/image2.png"
+          ],
+          "Kapı": [
+            "/_images/BakisIcOdaKapisi/Kapi/image1.png",
+            "/_images/BakisIcOdaKapisi/Kapi/image2.png"
+          ],
+          "Kapak": [
+            "/_images/BakisIcOdaKapisi/Kapak/image1.png",
+            "/_images/BakisIcOdaKapisi/Kapak/image2.png"
+          ]
+        }
+      },
+      "Albertgenau Balkon Sistemleri": {
+        "subcategories": {
+          "Cambalkon - Katlanır Cam Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/Cambalkon/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/Cambalkon/image2.png"
+          ],
+          "Tambalkon Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/Tambalkon/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/Tambalkon/image2.png"
+          ],
+          "Biokimatik Pergola Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/Biokimatik/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/Biokimatik/image2.png"
+          ],
+          "Kış Bahçesi Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/KisBahcesi/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/KisBahcesi/image2.png"
+          ],
+          "Giyotin Cam Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/Giyotin/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/Giyotin/image2.png"
+          ],
+          "Hareketli Cam Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/Hareketli/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/Hareketli/image2.png"
+          ],
+          "Küpeşte Korkuluk Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/Kupeste/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/Kupeste/image2.png"
+          ],
+          "Rüzgar Kırıcı Cam Sistemleri": [
+            "/_images/AlbertgenauBalkonSistemleri/RuzgarKirici/image1.png",
+            "/_images/AlbertgenauBalkonSistemleri/RuzgarKirici/image2.png"
+          ]
+        }
+      },
+      "Egepen PVC Sistemleri": {
+        "subcategories": {
+          "PVC Pencere Sistemleri": [
+            "/_images/EgepenPVCSistemleri/Pencere/image1.png",
+            "/_images/EgepenPVCSistemleri/Pencere/image2.png"
+          ],
+          "PVC Kapı Sistemleri": [
+            "/_images/EgepenPVCSistemleri/Kapi/image1.png",
+            "/_images/EgepenPVCSistemleri/Kapi/image2.png"
+          ],
+          "PVC Sürme Sistemleri": [
+            "/_images/EgepenPVCSistemleri/Surme/image1.png",
+            "/_images/EgepenPVCSistemleri/Surme/image2.png"
+          ],
+          "Storbox Panjur": [
+            "/_images/EgepenPVCSistemleri/Storbox/image1.png",
+            "/_images/EgepenPVCSistemleri/Storbox/image2.png"
+          ],
+          "Deceuninck Cam Balkon Sistemleri": [
+            "/_images/EgepenPVCSistemleri/Deceuninck/image1.png",
+            "/_images/EgepenPVCSistemleri/Deceuninck/image2.png"
+          ]
+        }
+      },
+      "IQ Aluminyum Aluminyum Sistemleri": {
+        "subcategories": {
+          "Sürme Sistemleri": [
+            "/_images/IQAluminyum/Surme/image1.png",
+            "/_images/IQAluminyum/Surme/image2.png"
+          ],
+          "Açılır Sistemler": [
+            "/_images/IQAluminyum/Acilir/image1.png",
+            "/_images/IQAluminyum/Acilir/image2.png"
+          ],
+          "Katlanır Sistemler": [
+            "/_images/IQAluminyum/Katlanir/image1.png",
+            "/_images/IQAluminyum/Katlanir/image2.png"
+          ],
+          "Mimari Sistemler": [
+            "/_images/IQAluminyum/Mimari/image1.png",
+            "/_images/IQAluminyum/Mimari/image2.png"
+          ],
+          "Cephe Sistemleri": [
+            "/_images/IQAluminyum/Cephe/image1.png",
+            "/_images/IQAluminyum/Cephe/image2.png"
+          ],
+          "Akıllı Havalandırma Sistemleri": [
+            "/_images/IQAluminyum/Havalandirma/image1.png",
+            "/_images/IQAluminyum/Havalandirma/image2.png"
+          ],
+          "Gölgelendirme Sistemleri": [
+            "/_images/IQAluminyum/Golgelendirme/image1.png",
+            "/_images/IQAluminyum/Golgelendirme/image2.png"
+          ]
+        }
+      }
+    }
+  }
+  

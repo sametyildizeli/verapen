@@ -12,9 +12,7 @@ export default function Products() {
     <Layout>
       <NavbarOriginal navDark />
       <CustomPageHeader title="ÜRÜNLER" />
-      {/* <PortfolioTab /> */}
       <ProductGalleryTab />
-      {/* <ProductsTab /> */}
       <Footer footerDark />
     </Layout>
   );

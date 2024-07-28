@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { productsGallery } from "@utils/data";
 
-const CampaignGallery = () => {
+const ProductGallery = ({ category, subCategory }) => {
   const [modalImageIndex, setModalImageIndex] = useState(null);
-  const images = [
-    "/_images/campaigns/campaign-1.png",
-    "/_images/campaigns/campaign-2.png",
-    "/_images/campaigns/campaign-3.png",
-    "/_images/campaigns/campaign-4.png",
-  ];
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    if (category && subCategory && productsGallery.categories[category] && productsGallery.categories[category].subcategories[subCategory]) {
+      setImages(productsGallery.categories[category].subcategories[subCategory]);
+    }
+  }, [category, subCategory]);
 
   const handleOpenModal = (index) => {
     setModalImageIndex(index);
@@ -33,7 +35,6 @@ const CampaignGallery = () => {
     <section className="office-address-section ptb-30">
       <div className="container">
         <div className="row">
-          {/* Iterate over your images */}
           {images.map((image, index) => (
             <div
               className="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0 mb-5"
@@ -48,7 +49,6 @@ const CampaignGallery = () => {
               >
                 <div className="office-content text-center p-4">
                   <span className="office-overlay"></span>
-                  {/* Additional content if needed */}
                 </div>
               </div>
             </div>
@@ -87,4 +87,4 @@ const CampaignGallery = () => {
   );
 };
 
-export default CampaignGallery;
+export default ProductGallery;
