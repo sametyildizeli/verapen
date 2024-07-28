@@ -126,7 +126,7 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
                         </span>
                       ))} */}
                       <div>
-                        <Link href={"/1"}>
+                        <Link href={"/products?category=Bakış İç Oda Kapısı"}>
                           <a className="dropdown-link px-0">
                             <span className="me-2">
                               <img
@@ -143,7 +143,7 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
                         </Link>
                       </div>
                       <div>
-                        <Link href={"/2"}>
+                        <Link href={"/products?category=Albertgenau Balkon Sistemleri"}>
                           <a className="dropdown-link px-0">
                             <span className="me-2">
                               <img
@@ -160,7 +160,7 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
                         </Link>
                       </div>
                       <div>
-                        <Link href={"/3"}>
+                        <Link href={"/products?category=Egepen PVC Sistemleri"}>
                           <a className="dropdown-link px-0">
                             <span className="me-2">
                               <img
@@ -177,7 +177,7 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
                         </Link>
                       </div>
                       <div>
-                        <Link href={"/2"}>
+                        <Link href={"/products?category=IQ Aluminyum Aluminyum Sistemleri"}>
                           <a className="dropdown-link px-0">
                             <span className="me-2">
                               <img

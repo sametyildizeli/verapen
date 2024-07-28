@@ -44,36 +44,36 @@ const ProductGallery = ({ category, subCategory, images }) => {
   return (
     <section className="office-address-section ptb-30">
       <div className="container">
-      <div className="row">
-      {galleryImages.map((imageData, index) => {
-        const imageName = imageData.url.split('/').pop().split('.')[0]; // image dosya adını alır
+        <div className="row">
+          {galleryImages.map((imageData, index) => {
+            const imageName = imageData.url.split('/').pop().split('.')[0]; // image dosya adını alır
 
-        return (
-          <div
-            className="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0 mb-5"
-            key={index}
-          >
-            <LazyLoad key={index} height={200} offset={100} once>
+            return (
               <div
-                className="rounded-custom border d-block office-address overflow-hidden z-2"
-                style={{
-                  background: `url('${imageData.url}') no-repeat center center / cover`,
-                  height: "300px",
-                }}
-                onClick={() => handleOpenModal(index)}
+                className="col-lg-3 col-md-6 mt-4 mt-lg-0 mt-xl-0 mb-5"
+                key={index}
               >
-                <div className="office-content text-center p-4">
-                  <span className="office-overlay"></span>
+                <LazyLoad key={index} height={200} offset={100} once>
+                  <div
+                    className="rounded-custom border d-block office-address overflow-hidden z-2"
+                    style={{
+                      background: `url('${imageData.url}') no-repeat center center / cover`,
+                      height: "300px",
+                    }}
+                    onClick={() => handleOpenModal(index)}
+                  >
+                    <div className="office-content text-center p-4">
+                      <span className="office-overlay"></span>
+                    </div>
+                  </div>
+                </LazyLoad>
+                <div className="image-name text-center mt-2" style={{ color: "black" }}>
+                  {imageData.name || imageName} {/* Dinamik olarak özel dosya adını yazdırır */}
                 </div>
               </div>
-            </LazyLoad>
-            <div className="image-name text-center mt-2" style={{ color: "black" }}>
-              {imageData.name || imageName} {/* Dinamik olarak özel dosya adını yazdırır */}
-            </div>
-          </div>
-        );
-      })}
-    </div>
+            );
+          })}
+        </div>
       </div>
 
       {modalImageIndex !== null && (

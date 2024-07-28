@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { productsGallery } from '@utils/data';
 import ProductGallery from '@components/custom/ProductGallery';
 
 const ProductGalleryTab = () => {
+  const router = useRouter();
+  const { category: categoryParam } = router.query;
+
   const [activeCategory, setActiveCategory] = useState('Tümü');
   const [activeSubCategory, setActiveSubCategory] = useState('All');
 
@@ -14,9 +18,19 @@ const ProductGalleryTab = () => {
   };
 
   useEffect(() => {
-    setActiveCategory('Tümü');
-    setActiveSubCategory('All');
-  }, []);
+    if (categoryParam) {
+      setActiveCategory(categoryParam);
+      if (categoryParam === 'Tümü') {
+        setActiveSubCategory('All');
+      } else {
+        const subCategory = Object.keys(productsGallery.categories[categoryParam].subcategories)[0];
+        setActiveSubCategory(subCategory);
+      }
+    } else {
+      setActiveCategory('Tümü');
+      setActiveSubCategory('All');
+    }
+  }, [categoryParam]);
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
