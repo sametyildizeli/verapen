@@ -41,7 +41,10 @@ const OffCanvasMenu = () => {
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   >
-                    <span className="drop-title mb-0"> Bakış İç Oda Kapısı </span>
+                    <span className="drop-title mb-0">
+                      {" "}
+                      Bakış İç Oda Kapısı{" "}
+                    </span>
                   </a>
                 </Link>
               </span>
@@ -54,7 +57,10 @@ const OffCanvasMenu = () => {
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   >
-                    <span className="drop-title mb-0"> Albert Genau Cam Balkon </span>
+                    <span className="drop-title mb-0">
+                      {" "}
+                      Albert Genau Cam Balkon{" "}
+                    </span>
                   </a>
                 </Link>
               </span>
@@ -67,7 +73,10 @@ const OffCanvasMenu = () => {
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   >
-                    <span className="drop-title mb-0"> Egepen PVC Sistemleri </span>
+                    <span className="drop-title mb-0">
+                      {" "}
+                      Egepen PVC Sistemleri{" "}
+                    </span>
                   </a>
                 </Link>
               </span>
@@ -82,7 +91,10 @@ const OffCanvasMenu = () => {
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
                   >
-                    <span className="drop-title mb-0"> Aluminyum Sistemleri </span>
+                    <span className="drop-title mb-0">
+                      {" "}
+                      Aluminyum Sistemleri{" "}
+                    </span>
                   </a>
                 </Link>
               </span>
@@ -104,9 +116,9 @@ const OffCanvasMenu = () => {
       </ul>
       <div className="action-btns mt-4 ps-3">
         <span data-bs-dismiss="offcanvas" aria-label="Close">
-          <Link href="/Ekatalog_Daglar.pdf">
+          <Link href="/e-catalog/Verapen_E-Katalog.pdf">
             <a target="_blank" className="btn btn-primary">
-              e-Katalog
+              E Katalog
             </a>
           </Link>
         </span>
