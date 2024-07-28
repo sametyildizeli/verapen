@@ -99,7 +99,7 @@ const NavbarOriginal = ({ navDark, insurance, classOption }) => {
               <li className="nav-item dropdown" style={{ margin: "0rem 1rem" }}>
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/products"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
