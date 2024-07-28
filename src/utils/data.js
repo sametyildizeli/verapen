@@ -1691,108 +1691,713 @@ const productsGallery = {
     "Bakış İç Oda Kapısı": {
       subcategories: {
         "Stok Kapılar": [
-          "/_images/products/BakisIcOdaKapisi/StokKapilar/image1.png",
-          "/_images/products/BakisIcOdaKapisi/StokKapilar/image2.png",
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/sardes.png",
+            name: "Sardes"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/perge.png",
+            name: "Perge"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/cone.png",
+            name: "Cone"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/cubic.png",
+            name: "Cubic"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/roma.png",
+            name: "Roma"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/berlin.png",
+            name: "Berlin"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/country-02.png",
+            name: "Country 02"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/StokKapilar/fourplus.png",
+            name: "Fourplus"
+          }
         ],
         Kapı: [
-          "/_images/products/BakisIcOdaKapisi/Kapi/image1.png",
-          "/_images/products/BakisIcOdaKapisi/Kapi/image2.png",
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/premium-shaker-1.png",
+              name: "Premium Shaker 1"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/premium-shaker-2.png",
+              name: "Premium Shaker 2"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/premium-sardes.png",
+              name: "Premium Sardes"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/premium-perge.png",
+              name: "Premium Perge"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/royal-efes.png",
+              name: "Royal Efes"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/rotal-cubic.png",
+              name: "Rotal Cubic"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/royal-milet.png",
+              name: "Royal Milet"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/royal-cone.png",
+              name: "Royal Cone"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-verona.png",
+              name: "Modern Verona"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-tria.png",
+              name: "Modern Tria"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-dante.png",
+              name: "Modern Dante"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-rodos.png",
+              name: "Modern Rodos"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-berlin.png",
+              name: "Modern Berlin"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-country-01.png",
+              name: "Modern Country 01"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-country-02.png",
+              name: "Modern Country 02"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-tokyo.png",
+              name: "Modern Tokyo"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-roma.png",
+              name: "Modern Roma"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-riga.png",
+              name: "Modern Riga"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-fourplus.png",
+              name: "Modern Fourplus"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-kobe.png",
+              name: "Modern Kobe"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/basic-fourline.png",
+              name: "Basic Fourline"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/modern-polar.png",
+              name: "Modern Polar"
+            },
+            {
+              url: "/_images/products/BakisIcOdaKapisi/Kapi/surgulu-sardes.png",
+              name: "Surgulu Sardes"
+            }
         ],
         Kapak: [
-          "/_images/products/BakisIcOdaKapisi/Kapak/image1.png",
-          "/_images/products/BakisIcOdaKapisi/Kapak/image2.png",
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 33.png",
+            name: "Membrane 435 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 34.png",
+            name: "Membrane 436 | 9300 Soft Touch Ay Gri"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 35.png",
+            name: "Membrane 438 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 36.png",
+            name: "Membrane 439 | 9330 Soft Touch Vizon"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 37.png",
+            name: "Membrane 433 | 9310 Soft Touch Antrasit"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 38.png",
+            name: "Membrane 429 | 9330 Soft Touch Vizon"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 39.png",
+            name: "Membrane 430 | 1235 Soft Su Yeşili"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 40.png",
+            name: "Membrane 423 | 9300 Soft Touch Ay Gri"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 41.png",
+            name: "Membrane 431 | 1234 Elit Soft Gri"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 42.png",
+            name: "Membrane 432 | 1234 Elit Soft Gri"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 43.png",
+            name: "Membrane 424 | 1237 Elit Soft Somon"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 44.png",
+            name: "Membrane 180 | 1201 Krem Dişbudak"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 45.png",
+            name: "Membrane 133 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 46.png",
+            name: "Membrane 416 | 1207 Saten Krem"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 47.png",
+            name: "Membrane 417 | 645 Beyaz Dişbudak"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 48.png",
+            name: "Membrane 411 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 49.png",
+            name: "Membrane 413 | 1239 Elit Soft Inox"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 50.png",
+            name: "Membrane 176 | 1606 Saten Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 51.png",
+            name: "Membrane 234 | 1235 Elit Soft Su Yeşili"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 52.png",
+            name: "Membrane 183 | 1204 Yeşil Dişbudak"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 53.png",
+            name: "Membrane 419 | 844 Siva 4"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 54.png",
+            name: "Membrane 420 | 1202 Bej Dişbudak"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 55.png",
+            name: "Membrane 414 | 1217 Naturel Silver"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 56.png",
+            name: "Membrane 149 | 1220 Açık Somon Meşe"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 57.png",
+            name: "Membrane 109 | 1214 Özel Mat Aytaşı"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 58.png",
+            name: "Membrane 205 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 59.png",
+            name: "Membrane 108 | 3219 Milano Ceviz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 60.png",
+            name: "Membrane 101 | 564 Nubuk Desen 4"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 61.png",
+            name: "Membrane 173 | 1606 Saten Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 62.png",
+            name: "Membrane 121 | 1218 Tester 1"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 63.png",
+            name: "Membrane 415 | 1216 Naturel New Gold"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 64.png",
+            name: "Membrane 410 | 1221 Koyu Somona Meşe"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 65.png",
+            name: "Membrane 412 | 1205 Mavi Dişbudak"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 66.png",
+            name: "Membrane 176 | 1606 Saten Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 67.png",
+            name: "Membrane 418 | 842 Siva 2"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 68.png",
+            name: "Membrane 138 | 1236 Elit Soft Antrasit"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 69.png",
+            name: "Membrane 118 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 70.png",
+            name: "Membrane 101 | 563 Nubuk Desen 3"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 71.png",
+            name: "Membrane 411 | 1208 Saten Vizon"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 72.png",
+            name: "Membrane 101 | 403 Parlak Akçağaç"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 73.png",
+            name: "Membrane 101 | 844 Siva Desen 4"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 74.png",
+            name: "Membrane 101 | 842 Siva Desen 2"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 75.png",
+            name: "Membrane 101 | 1210 Saten Cappuccino"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 76.png",
+            name: "Membrane 133 | 805 Bute Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 77.png",
+            name: "Membrane 406 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 78.png",
+            name: "Membrane 133 | 805 Bute Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 79.png",
+            name: "Membrane 101 | 843 Siva Desen 3"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 80.png",
+            name: "Membrane 101 | 562 Nubuk Desen 2"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 81.png",
+            name: "Membrane 101 | 225 Eko Parlak Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 82.png",
+            name: "Membrane 101 | 90 Parlak Bordo"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 83.png",
+            name: "Membrane 205 | 1210 Saten Cappuccino"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 84.png",
+            name: "Membrane 204 | 1685 SM Antrasit"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 85.png",
+            name: "Membrane 181 | 1215 Açık Natural Ceviz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 86.png",
+            name: "Membrane 174 | 1203 Antrasit Dişbudak"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 87.png",
+            name: "Membrane 102 | 841 Siva Desen 1"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 88.png",
+            name: "Membrane 410 | 1228 Saten Bej"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 89.png",
+            name: "Membrane 406 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 90.png",
+            name: "Membrane 204 | 1685 Saten Füme"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 91.png",
+            name: "Membrane 181 | 1632 Soft Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 92.png",
+            name: "Membrane 180 | 1244 Antrasit Dişbudak"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 93.png",
+            name: "Membrane 173 | 805 Bute Beyaz"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 94.png",
+            name: "Membrane 121 | 1218 Testere Doku 01"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 95.png",
+            name: "Membrane 109 | 9320 S.T. Tungsten Gri"
+          },
+          {
+            url: "/_images/products/BakisIcOdaKapisi/Kapak/image 96.png",
+            name: "Membrane 108 | 3219 Milano Ceviz"
+          }
+
         ],
       },
     },
     "Albertgenau Balkon Sistemleri": {
       subcategories: {
         "Cambalkon - Katlanır Cam Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/Cambalkon/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/Cambalkon/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Cambalkon/image 97.png",
+            name: "Isıcam'lı Cambalkon - Tiara Twinmax"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Cambalkon/image 98.png",
+            name: "Tek Camlı Kayar Katlanır Cambalkon"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Cambalkon/image 99.png",
+            name: "Ekonomik Cambalkon Statü Optima"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Cambalkon/image 100.png",
+            name: "Ekonomik Cambalkon Statü Tango"
+          }
         ],
         "Tambalkon Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/Tambalkon/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/Tambalkon/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Tambalkon/tambalkon.png",
+            name: "Tambalkon Silinebilir Giyotin Cam Balkon"
+          }
+          
         ],
         "Biokimatik Pergola Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/Biokimatik/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/Biokimatik/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Biokimatik/bioklimtik.png",
+            name: "Bioklimatik Pergola"
+          }
+          
         ],
         "Kış Bahçesi Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/KisBahcesi/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/KisBahcesi/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/KisBahcesi/kışbahçsi.png",
+            name: "Kış Bahçesi"
+          }
+          
+        ],
+        "Sürme Cam Balkon Sistemleri": [
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Surme/image 104.png",
+            name: "Isıcam'lı Sürme Cambalkon"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Surme/image 105.png",
+            name: "Yeni Nesil Sürme Sistem"
+          }
+          
         ],
         "Giyotin Cam Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/Giyotin/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/Giyotin/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Giyotin/image 106.png",
+            name: "Vertiflex"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Giyotin/image 107.png",
+            name: "Tambalkon Silinebilir Giyotin Cam Balkon"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Giyotin/image 108.png",
+            name: "Vertiflex UP"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Giyotin/image 109.png",
+            name: "Vertiflex All Glass"
+          }
         ],
         "Hareketli Cam Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/Hareketli/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/Hareketli/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Hareketli/image 110.png",
+            name: "Momentum"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Hareketli/image 111.png",
+            name: "Atrium"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Hareketli/image 112.png",
+            name: "Centrum"
+          }
         ],
         "Küpeşte Korkuluk Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/Kupeşte/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/Kupeşte/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Kupeste/image 113.png",
+            name: "Isıcam'lı Küpeşte Sistemi - Balumax"
+          },
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/Kupeste/image 114.png",
+            name: "Isıcam'lı Entegre Küpeşte Sistemi - Balumax Int"
+          }
         ],
         "Rüzgar Kırıcı Cam Sistemleri": [
-          "/_images/products/AlbertgenauBalkonSistemleri/RuzgarKirici/image1.png",
-          "/_images/products/AlbertgenauBalkonSistemleri/RuzgarKirici/image2.png",
+          {
+            url: "/_images/products/AlbertgenauBalkonSistemleri/RuzgarKirici/rüzgarkirici.png",
+            name: "Rüzgar Kırıcı Cam Sistemi"
+          }
         ],
       },
     },
     "Egepen PVC Sistemleri": {
       subcategories: {
         "PVC Pencere Sistemleri": [
-          "/_images/products/EgepenPVCSistemleri/Pencere/image1.png",
-          "/_images/products/EgepenPVCSistemleri/Pencere/image2.png",
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Pencere/image 117.png",
+            name: "Legend"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Pencere/image 120.png",
+            name: "Legend Art"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Pencere/image 121.png",
+            name: "Zendow"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Pencere/image 122.png",
+            name: "Zendow Plus"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Pencere/image 123.png",
+            name: "Zendow Deluxe"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Pencere/image 124.png",
+            name: "Fusion"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Pencere/image 125.png",
+            name: "Everest Max"
+          }
         ],
         "PVC Kapı Sistemleri": [
-          "/_images/products/EgepenPVCSistemleri/Kapi/image1.png",
-          "/_images/products/EgepenPVCSistemleri/Kapi/image2.png",
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Kapi/image 126.png",
+            name: "Legend"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Kapi/image 127.png",
+            name: "Legend Art"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Kapi/image 128.png",
+            name: "Zendow"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Kapi/image 129.png",
+            name: "Zendow Plus"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Kapi/image 130.png",
+            name: "Zendow Deluxe"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Kapi/image 131.png",
+            name: "Fusion"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Kapi/image 132.png",
+            name: "Everest Max"
+          }
         ],
         "PVC Sürme Sistemleri": [
-          "/_images/products/EgepenPVCSistemleri/Surme/image1.png",
-          "/_images/products/EgepenPVCSistemleri/Surme/image2.png",
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Surme/image 133.png",
+            name: "Legend Sürme"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Surme/image 134.png",
+            name: "Sürme"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Surme/image 135.png",
+            name: "HS76"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Surme/image 136.png",
+            name: "Slimslide"
+          }
         ],
         "Storbox Panjur": [
-          "/_images/products/EgepenPVCSistemleri/Storbox/image1.png",
-          "/_images/products/EgepenPVCSistemleri/Storbox/image2.png",
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Storbox/storbox.png",
+            name: "Storbox Panjur"
+          }
         ],
         "Deceuninck Cam Balkon Sistemleri": [
-          "/_images/products/EgepenPVCSistemleri/Deceuninck/image1.png",
-          "/_images/products/EgepenPVCSistemleri/Deceuninck/image2.png",
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Deceuninck/image 139.png",
+            name: "Zen Duo"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Deceuninck/image 140.png",
+            name: "Zen Uno"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Deceuninck/image 141.png",
+            name: "Vertex"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Deceuninck/image 142.png",
+            name: "Suprem"
+          },
+          {
+            url: "/_images/products/EgepenPVCSistemleri/Deceuninck/image 143.png",
+            name: "Performus"
+          }
         ],
       },
     },
     "IQ Aluminyum Aluminyum Sistemleri": {
       subcategories: {
         "Sürme Sistemleri": [
-          "/_images/products/IQAluminyum/Sürme/image1.png",
-          "/_images/products/IQAluminyum/Sürme/image2.png",
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 144.png",
+            name: "Renovatio"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 145.png",
+            name: "Ingentis"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 146.png",
+            name: "Moventis"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 147.png",
+            name: "Srenad"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 148.png",
+            name: "Solidum"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 149.png",
+            name: "Arma"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 150.png",
+            name: "Bellus"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 151.png",
+            name: "Limatus"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 152.png",
+            name: "Serenad 6"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 153.png",
+            name: "Minimal SLT"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Surme/image 154.png",
+            name: "Autowin"
+          }
         ],
         "Açılır Sistemler": [
-          "/_images/products/IQAluminyum/Acilir/image1.png",
-          "/_images/products/IQAluminyum/Acilir/image2.png",
+          {
+            url: "/_images/products/IQAluminyum/Acilir/image1.png",
+            name: "Image 1"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Acilir/image2.png",
+            name: "Image 2"
+          }
         ],
         "Katlanır Sistemler": [
-          "/_images/products/IQAluminyum/Katlanir/image1.png",
-          "/_images/products/IQAluminyum/Katlanir/image2.png",
+          {
+            url: "/_images/products/IQAluminyum/Katlanir/image1.png",
+            name: "Image 1"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Katlanir/image2.png",
+            name: "Image 2"
+          }
         ],
         "Mimari Sistemler": [
-          "/_images/products/IQAluminyum/Mimari/image1.png",
-          "/_images/products/IQAluminyum/Mimari/image2.png",
+          {
+            url: "/_images/products/IQAluminyum/Mimari/image1.png",
+            name: "Image 1"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Mimari/image2.png",
+            name: "Image 2"
+          }
         ],
         "Cephe Sistemleri": [
-          "/_images/products/IQAluminyum/Cephe/image1.png",
-          "/_images/products/IQAluminyum/Cephe/image2.png",
+          {
+            url: "/_images/products/IQAluminyum/Cephe/image1.png",
+            name: "Image 1"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Cephe/image2.png",
+            name: "Image 2"
+          }
         ],
         "Akıllı Havalandırma Sistemleri": [
-          "/_images/products/IQAluminyum/Havalandirma/image1.png",
-          "/_images/products/IQAluminyum/Havalandirma/image2.png",
+          {
+            url: "/_images/products/IQAluminyum/Havalandirma/image1.png",
+            name: "Image 1"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Havalandirma/image2.png",
+            name: "Image 2"
+          }
         ],
         "Gölgelendirme Sistemleri": [
-          "/_images/products/IQAluminyum/Golgelendirme/image1.png",
-          "/_images/products/IQAluminyum/Golgelendirme/image2.png",
+          {
+            url: "/_images/products/IQAluminyum/Golgelendirme/image1.png",
+            name: "Image 1"
+          },
+          {
+            url: "/_images/products/IQAluminyum/Golgelendirme/image2.png",
+            name: "Image 2"
+          }
         ],
       },
     },
