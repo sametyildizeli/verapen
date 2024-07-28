@@ -5,17 +5,17 @@ import ProductList from "@components/product-list/product-list";
 import GalleryTab from "@components/tabs/GalleryTab";
 import Footer from "@layout/Footer/Footer";
 import Navbar from "@layout/Header/Navbar";
+import NavbarOriginal from "@layout/Header/NavbarOriginal";
 import Layout from "@layout/Layout";
 
 export default function Gallery() {
   return (
     <Layout>
-      <Navbar  navDark/>      
+      <NavbarOriginal navDark />
       <CustomPageHeader title="Kampanyalar ve Duyurular" />
       <GalleryTab />
       {/* <MediaGallery /> */}
-      <Footer footerLight />
-
+      <Footer footerDark />
     </Layout>
   );
 }

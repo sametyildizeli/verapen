@@ -170,8 +170,11 @@ const FeatureOne = () => {
                   </p>
                 </div>
                 <div className="action-btns mt-auto">
-                  <Link href="/request-for-demo">
-                    <a className="btn btn-outline-primary btn-sm">
+                  <Link href="https://api.whatsapp.com/send?phone=905350137524&text=Merhaba%2C%20Verapen.com'daki%20%C3%BCr%C3%BCnleriniz%20hakk%C4%B1nda%20detayl%C4%B1%20bilgi%20alabilir%20miyim%3F">
+                    <a
+                      className="btn btn-outline-primary btn-sm"
+                      target="_blank"
+                    >
                       Bize WhatsApp'tan Ulaşın
                     </a>
                   </Link>

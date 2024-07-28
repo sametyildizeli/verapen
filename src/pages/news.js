@@ -13,7 +13,7 @@ const News = () => {
         title="Haberler ve Blog"
         // desc="Exercitation adipisicing sunt nostrud velit est fugiat."
       />
-      <BlogFeature />
+      {/* <BlogFeature /> */}
       <Footer footerLight />
     </Layout>
   );

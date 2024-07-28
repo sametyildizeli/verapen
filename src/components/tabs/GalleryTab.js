@@ -10,13 +10,13 @@ import CampaignGallery from '@components/custom/CampaignGallery';
 
 const GalleryTab = () => {
   return (
-    <section className="feature-tab-section ptb-120 bg-light">
+    <section className="feature-tab-section ptb-60 bg-light">
       <div className="container">
         <div className="row justify-content-center align-content-center">
           <div className="col-md-10 col-lg-6">
             <SectionTitle
               // subtitle=""
-              title="Kampanya ve Duyurular"
+              // title="Kampanya ve Duyurular"
               // description="Dolore consequat sint voluptate ipsum et et voluptate laborum do ea adipisicing et."
               centerAlign
             />
@@ -67,7 +67,8 @@ const GalleryTab = () => {
                 <CampaignGallery />
               </div>
               <div className="tab-pane fade pt-60" id="tab-2" role="tabpanel">
-                <MediaGalleryVideo />
+                {/* <MediaGalleryVideo /> */}
+                <p className='d-flex justify-content-center'>Şu anda duyuru bulunmamaktadır.</p>
               </div>
             </div>
           </div>

@@ -1,12 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const Coorparation = () => {
   return (
     <section
-      className="about-header-section ptb-120 position-relative overflow-hidden bg-dark"
+      className="about-header-section ptb-150 position-relative overflow-hidden"
       style={{
-        background: "url('/page-header-bg.svg')no-repeat center right",
+        background: "url('/_images/header-banner.png') no-repeat center center",
+        backgroundSize: "cover",
       }}
     >
       <div className="container">
@@ -15,25 +16,38 @@ const Coorparation = () => {
             <div className="section-heading-wrap d-flex justify-content-between z-5 position-relative">
               <div className="about-content-left">
                 <div className="about-info mb-5">
-                  <h1 className="fw-bold display-5">
+                  <h1 className="fw-bold display-5" style={{ color: "white" }}>
                     Kurumsal
                   </h1>
-                  <p className="lead">
-                    Dynamically disintermediate technically sound technologies
-                    with compelling quality vectors error-free communities.{' '}
+                  <p className="lead" style={{ color: "white" }}>
+                    Verapen uzun bir geçmiş ve bu sürede kazanılmış tecrübe ve
+                    deneyimin verdiği güç ile geleceğe başarılı adımlarla, güven
+                    içinde ilerlemektedir.
                   </p>
-                  <Link href="/career">
+                  {/* <Link href="/career">
                     <a className="btn btn-primary mt-4 me-3">Open Positions</a>
                   </Link>
                   <Link href="/about-us">
                     <a className="btn btn-soft-primary mt-4">Meet Our Team</a>
-                  </Link>
+                  </Link> */}
                 </div>
-                <img src="/about-img-1.jpg" alt="about" className="img-fluid about-img-first mt-5 rounded-custom shadow"/>
+                <img
+                  src="/_images/tab-1.png"
+                  alt="about"
+                  className="img-fluid about-img-first mt-5 rounded-custom shadow"
+                />
               </div>
               <div className="about-content-right">
-              <img src="/about-img-2.jpg" alt="about" className="img-fluid mb-5 rounded-custom shadow"/>
-              <img src="/about-img-3.jpg" alt="about" className="rounded-custom about-img-last shadow"/>
+                <img
+                  src="/_images/tab-2.png"
+                  alt="about"
+                  className="img-fluid mb-5 rounded-custom shadow"
+                />
+                <img
+                  src="/_images/tab-3.png"
+                  alt="about"
+                  className="rounded-custom about-img-last shadow"
+                />
               </div>
             </div>
           </div>

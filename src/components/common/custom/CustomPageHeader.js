@@ -5,15 +5,15 @@ import Link from "next/link";
 const CustomPageHeader = ({ title, desc, integration, blogtags }) => {
   return (
     <section
-      className="page-header position-relative overflow-hidden ptb-150 bg-dark"
+      className="page-header position-relative overflow-hidden ptb-100 bg-dark"
       style={{
-        background: "url('/_images/banner.png')no-repeat center",
+        background: "url('/_images/header-banner.png')no-repeat center",
         backgroundSize: "cover",
       }}
     >
       <div className="container" style={{ textAlign: "center" }}>
         <div className="row justify-content-between align-items-center">
-          {/* {desc?.length > 0 ? (
+          {desc?.length > 0 ? (
             <div className="col-lg-12 col-12">
               <div className="company-info-wrap align-items-center">
                 <div className="company-overview">
@@ -24,7 +24,7 @@ const CustomPageHeader = ({ title, desc, integration, blogtags }) => {
             </div>
           ) : (
             <h1 className="display-5 fw-bold">{title}</h1>
-          )} */}
+          )}
         </div>
       </div>
     </section>

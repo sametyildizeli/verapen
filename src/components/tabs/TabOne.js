@@ -12,11 +12,11 @@ const TabOne = () => {
         <div className="row justify-content-center align-content-center">
           <div className="col-md-10 col-lg-6">
             <SectionTitle
-              subtitle="Features"
-              title="Powerful Advanced Features"
-              description="Dynamically initiate market positioning total linkage with
-                  clicks-and-mortar technology progressively procrastinate
-                  compelling."
+              // subtitle="Features"
+              title="Ürün Tanıtımı"
+              // description="Dynamically initiate market positioning total linkage with
+              //     clicks-and-mortar technology progressively procrastinate
+              //     compelling."
               centerAlign
             />
           </div>

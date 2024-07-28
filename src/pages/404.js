@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
+import NavbarOriginal from "@layout/Header/NavbarOriginal";
 
 const NotFoundPage = () => {
   return (
@@ -17,12 +18,10 @@ const NotFoundPage = () => {
               <div className="error-page-content-wrap">
                 <h2 className="error-404 text-warning">404</h2>
                 <h1 className="display-5 fw-bold">Sayfa Bulunamadı</h1>
-                <p className="lead">
-                 Aramış olduğunuz sayfa bulunamadı{' '}
-                </p>
+                <p className="lead">Aramış olduğunuz sayfa bulunamadı </p>
 
                 <Link href="/">
-                  <a className="btn btn-primary mt-4">Anasayfaya Dön</a>
+                  <a className="btn btn-secondary mt-4">Anasayfaya Dön</a>
                 </Link>
               </div>
             </div>
@@ -73,9 +72,10 @@ const NotFoundPage = () => {
                   </li>
                 </ul>
                 <img
-                  src="/hero-1.png"
-                  alt="hero img"
+                  src="/_images/about-us.png"
+                  alt="404-verapen"
                   className="img-fluid position-relative z-5"
+                  style={{borderRadius: "10px"}}
                 />
               </div>
             </div>

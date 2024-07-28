@@ -13,6 +13,7 @@ const sliderProductData = [
     description: `İç Oda Kapısı, Cam Balkon Sistemleri, PVC Doğrama ve Aluminyum Sistemleri`,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/_images/slider-products/p-0.png",
+    productCategoryLink: "/products",
   },
   {
     key: 1,
@@ -20,6 +21,7 @@ const sliderProductData = [
     title: `Bakış Door \n Lake Kapak ve İç Oda Kapı Laquer Touch `,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/_images/slider-products/p-1.png",
+    productCategoryLink: "/products",
   },
   {
     key: 2,
@@ -27,6 +29,7 @@ const sliderProductData = [
     title: `Albert Genau \nCam Balkon, Teras ve \nBahçe  Kapama \nSistemleri`,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/_images/slider-products/p-2.png",
+    productCategoryLink: "/products",
   },
   {
     key: 3,
@@ -34,6 +37,7 @@ const sliderProductData = [
     title: `Egepen \nPVC Pencere ve Kapı Sistemleri`,
     videoLink: "https://www.youtube.com/watch?v=MPkfO8vMlIs",
     productImg: "/_images/slider-products/p-3.png",
+    productCategoryLink: "/products",
   },
 ];
 
@@ -132,7 +136,7 @@ const HeroSectionOne = () => {
                 <br />
 
                 <div className="action-btns align-items-center flex d-sm-flex d-lg-flex d-md-flex">
-                  <Link href="/request-demo">
+                  <Link href={item.productCategoryLink}>
                     <a className="btn btn-primary me-3">Detaylı Bilgi</a>
                   </Link>
                   <div>
@@ -142,7 +146,8 @@ const HeroSectionOne = () => {
                       type="button"
                       className="text-white text-decoration-none d-inline-flex align-items-center watch-now-btn"
                     >
-                      <IoPlayCircleOutline className="me-2 text-white" /> Tanıtım Videosu
+                      <IoPlayCircleOutline className="me-2 text-white" />{" "}
+                      Tanıtım Videosu
                     </a>
                   </div>
                 </div>

@@ -92,7 +92,7 @@ const PortfolioTab = () => {
                 id="pills-tab"
                 role="tablist"
               >
-                <li className="nav-item" role="presentation">
+                {/* <li className="nav-item" role="presentation">
                   <button
                     className="nav-link active"
                     id="damperli-romork-tab"
@@ -105,7 +105,7 @@ const PortfolioTab = () => {
                   >
                     Tümü
                   </button>
-                </li>
+                </li> */}
                 <li className="nav-item" role="presentation">
                   <button
                     className="nav-link"

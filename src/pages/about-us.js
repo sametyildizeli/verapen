@@ -7,12 +7,13 @@ import CustomPageHeader from "@components/common/custom/CustomPageHeader";
 import HeroSectionTwo from "@components/hero-section/HeroSectionTwo";
 import Coorparation from "@components/custom/Coorparation";
 import OurStory from "@components/our-story/OurStory";
+import NavbarOriginal from "@layout/Header/NavbarOriginal";
 
 const AboutUs = () => {
   return (
-    <Layout title="Hakkımızda" desc="this is about us page">
-      <Navbar  navDark/>
-      <CustomPageHeader title="Hakkımızda" />
+    <Layout title="Kurumsal" desc="Verapen Kurumsal Sayfası">
+      <NavbarOriginal navDark />
+      {/* <CustomPageHeader /> */}
       {/* <TestimonialOne /> */}
       <Coorparation />
       <OurStory />

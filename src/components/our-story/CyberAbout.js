@@ -60,12 +60,15 @@ const CyberAbout = () => {
                 <p>
                   Verapen uzun bir geçmiş ve bu sürede kazanılmış tecrübe ve
                   deneyimin verdiği güç ile geleceğe başarılı adımlarla, güven
-                  içinde ilerlemektedir. Üçler Elektrik adıyla ticari
-                  faaliyetine 1987 yılında başlamış ve bu güne kadar büyük
-                  projelerde yüklenici konumlarında bulunmuştur. 1995 yılında
-                  inşaat, 2000 yılında mobilya ve pvc kapı-pencere sistemleri
-                  sektöründe en iyi reklamın müşteri memnuniyeti olduğu
-                  bilinciyle 21. yılın sonunda da devam etmektedir.
+                  içinde ilerlemektedir.
+                </p>
+                <p>
+                  Üçler Elektrik adıyla ticari faaliyetine 1987 yılında başlamış
+                  ve bu güne kadar büyük projelerde yüklenici konumlarında
+                  bulunmuştur. 1995 yılında inşaat, 2000 yılında mobilya ve pvc
+                  kapı-pencere sistemleri sektöründe en iyi reklamın müşteri
+                  memnuniyeti olduğu bilinciyle 21. yılın sonunda da devam
+                  etmektedir.
                 </p>
                 <p>
                   Güçlü ve yenilikçi hedefler kazandırılmış kurumsal yapıya
