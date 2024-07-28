@@ -118,7 +118,7 @@ const HeroSectionOne = () => {
           >
             <div className="col-lg-6 col-md-12 hero-section-container">
               <div
-                className="hero-content-wrap mt-0 mt-lg-0 mt-xl-0"
+                className="hero-content-wrap mt-3 mt-lg-0 mt-xl-0"
                 style={{
                   height: "100%",
                   alignItems: "flex-start",
@@ -128,7 +128,7 @@ const HeroSectionOne = () => {
                 }}
               >
                 <h1
-                  className="display-4 fw-bolder"
+                  className="display-5 fw-bolder"
                   style={{ color: "#ffffff", whiteSpace: "pre-line" }}
                 >
                   {item.title}
@@ -151,7 +151,7 @@ const HeroSectionOne = () => {
                     </a>
                   </div>
                 </div>
-                <div className="row justify-content-lg-start mt-60">
+                <div className="row justify-content-lg-start mt-40 mb-4">
                   <h6 className="text-white-70 mb-2">Bayiliklerimiz:</h6>
                   <div className="col-3 col-sm-3 d-flex alig-items-center justify-content-center my-2 pl-1 m-0">
                     <Image
